@@ -1,0 +1,9 @@
+{
+  "name": "ecovaptoiture",
+  "version": "1.0.0",
+  "description": "Site vitrine Ecovaptoiture — nettoyage écologique de toiture dans les Landes et Pays Basque",
+  "keywords": ["nettoyage toiture", "demoussage", "vapeur", "hydrofuge", "landes", "pays-basque", "ecologique"],
+  "scripts": {
+    "build": "node build.js"
+  }
+}

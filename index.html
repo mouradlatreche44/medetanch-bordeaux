@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medétanch — Couvreur, étancheur et paysagiste à Bordeaux & Gironde | 24/7</title>
+  <meta name="description" content="Medétanch : artisan couvreur, étancheur et paysagiste à Bordeaux. Réfection toiture, démoussage, recherche de fuite, étanchéité bicouche, terrasse bois. Devis gratuit, intervention 100 km autour de Bordeaux, astreinte 24/7." />
+  <meta name="keywords" content="couvreur Bordeaux, étancheur Bordeaux, recherche de fuite Gironde, réfection toiture Bordeaux, démoussage toiture, paysagiste Bordeaux, terrasse bois, urgence toiture 24/7" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://medetanch-bordeaux.pages.dev/" />
+  <meta name="theme-color" content="#E85D1A" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Medétanch — Couvreur, étancheur et paysagiste à Bordeaux" />
+  <meta property="og:description" content="L'étanchéité dans les règles, la couverture comme avant. Artisan seul à Bordeaux, intervention 100 km, astreinte 24/7. Devis gratuit sous 48h." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://medetanch-bordeaux.pages.dev/" />
+  <meta property="og:image" content="https://medetanch-bordeaux.pages.dev/assets/img/logo-medetanch.png" />
+  <meta property="og:locale" content="fr_FR" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Medétanch — Couvreur, étancheur et paysagiste à Bordeaux" />
+  <meta name="twitter:description" content="L'étanchéité dans les règles, la couverture comme avant. Artisan seul à Bordeaux, intervention 100 km, astreinte 24/7. Devis gratuit sous 48h." />
+  <meta name="twitter:image" content="https://medetanch-bordeaux.pages.dev/assets/img/logo-medetanch.png" />
+  <meta property="og:site_name" content="Medétanch" />
+
+  <!-- Favicon (utilise le logo SVG) -->
+  <link rel="icon" type="image/png" href="assets/img/logo-medetanch.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Bebas Neue', 'sans-serif'],
+            serif:   ['Playfair Display', 'serif'],
+            body:    ['Inter', 'sans-serif'],
+            mono:    ['JetBrains Mono', 'ui-monospace', 'monospace'],
+          },
+          colors: {
+            brand: { 50:'#FFF4EC',100:'#FFE3CC',200:'#FFC79A',300:'#FFA361',400:'#FA822F',500:'#E85D1A',600:'#C9460E',700:'#A53707',800:'#7E2A05',900:'#5C1F04',950:'#311002' },
+            azur:  { 50:'#EAF4FF',100:'#CFE4FF',200:'#A0CAFF',300:'#6DAEFF',400:'#3F90F0',500:'#1976D2',600:'#0E5CAB',700:'#0E4D8A',800:'#0B3B6B',900:'#082A4D',950:'#04162A' },
+            ember: { 400:'#F35A4D',500:'#E63946',600:'#D7281F',700:'#A31D17' },
+            ink:   { 50:'#FAF7F4',100:'#F1EBE4',200:'#DDD2C5',300:'#B8A793',400:'#8B7866',500:'#5E4F40',600:'#3F342A',700:'#2A2218',800:'#1A140D',900:'#0E0A06' },
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    :root { --brand:#E85D1A; --brand-600:#C9460E; --azur:#1976D2; --azur-700:#0E4D8A; --ember:#D7281F; --paper:#FFFAF5; --ink:#1A140D; }
+    * { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+    html { scroll-behavior: smooth; scroll-padding-top: 96px; }
+    body { font-family: 'Inter', sans-serif; background: var(--paper); color: var(--ink); overflow-x: hidden; line-height: 1.55; }
+    h1, h2, h3, h4, h5 { font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.005em; }
+    .font-serif-h { font-family: 'Playfair Display', serif; letter-spacing: -0.01em; }
+    ::selection { background: var(--brand); color: white; }
+
+    .text-gradient-logo { background: linear-gradient(95deg, #E85D1A 0%, #FA822F 45%, #1976D2 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .text-gradient-fire { background: linear-gradient(95deg, #FFD24A 0%, #FA822F 45%, #D7281F 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .bg-gradient-logo   { background: linear-gradient(95deg, #E85D1A 0%, #FA822F 45%, #1976D2 100%); }
+    .bg-hero            { background: linear-gradient(160deg, #1A140D 0%, #2A2218 35%, #082A4D 75%, #0E4D8A 100%); }
+
+    .topbar { background: linear-gradient(90deg, #1A140D 0%, #2A2218 100%); color: #DDD2C5; font-size: 12px; letter-spacing: 0.08em; }
+
+    .nav-link { position: relative; font-family: 'Inter', sans-serif; font-weight: 700; font-size: 12px; text-transform: uppercase; letter-spacing: 0.14em; color: #2A2218; transition: color .2s ease; }
+    .nav-link:hover { color: var(--brand); }
+    .nav-link::after { content:''; position:absolute; bottom:-10px; left:0; width:0; height:2px; background: linear-gradient(90deg, var(--brand), var(--azur)); transition: width .35s cubic-bezier(.4,0,.2,1); }
+    .nav-link:hover::after, .nav-link.active::after { width: 100%; }
+    .nav-link.active { color: var(--brand); }
+
+    .btn { display:inline-flex; align-items:center; justify-content:center; gap:10px; padding: 14px 26px; border-radius: 6px; font-weight: 700; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; transition: all .28s cubic-bezier(.4,0,.2,1); font-family: 'Inter', sans-serif; cursor: pointer; border: none; }
+    .btn-primary { background: linear-gradient(95deg, #E85D1A 0%, #C9460E 100%); color: white; box-shadow: 0 10px 28px -8px rgba(232,93,26,0.45), 0 6px 18px -6px rgba(11,59,107,0.3); }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 16px 36px -10px rgba(232,93,26,0.55), 0 10px 22px -8px rgba(11,59,107,0.35); }
+    .btn-azur { background: var(--azur-700); color: white; box-shadow: 0 8px 20px -6px rgba(11,59,107,0.45); }
+    .btn-azur:hover { background: var(--azur); transform: translateY(-2px); }
+    .btn-white { background: white; color: var(--brand); box-shadow: 0 8px 20px -6px rgba(0,0,0,0.15); }
+    .btn-white:hover { transform: translateY(-2px); box-shadow: 0 14px 28px -8px rgba(0,0,0,0.2); }
+    .btn-outline-light { background: transparent; color: white; border: 1.5px solid rgba(255,255,255,0.5); }
+    .btn-outline-light:hover { background: white; color: var(--brand); border-color: white; }
+
+    .section-label { display:inline-flex; align-items:center; gap: 12px; color: var(--brand); font-size: 11px; font-weight: 700; letter-spacing: 0.28em; text-transform: uppercase; margin-bottom: 18px; font-family: 'JetBrains Mono', monospace; }
+    .section-label::before { content:''; width: 28px; height: 2px; background: linear-gradient(90deg, var(--brand), var(--azur)); border-radius: 2px; }
+    .section-label.light { color: #FFC79A; }
+    .section-label.light::before { background: linear-gradient(90deg, #FFC79A, #6DAEFF); }
+    .section-label.azur { color: var(--azur); }
+    .section-label.azur::before { background: linear-gradient(90deg, var(--azur), var(--brand)); }
+
+    .reveal { opacity: 0; transform: translateY(28px); transition: opacity .8s cubic-bezier(.16,1,.3,1), transform .8s cubic-bezier(.16,1,.3,1); }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-left { opacity: 0; transform: translateX(-32px); transition: opacity .8s cubic-bezier(.16,1,.3,1), transform .8s cubic-bezier(.16,1,.3,1); }
+    .reveal-left.visible { opacity: 1; transform: translateX(0); }
+    .reveal-right { opacity: 0; transform: translateX(32px); transition: opacity .8s cubic-bezier(.16,1,.3,1), transform .8s cubic-bezier(.16,1,.3,1); }
+    .reveal-right.visible { opacity: 1; transform: translateX(0); }
+    .reveal-stagger { opacity: 0; transform: translateY(24px); transition: opacity .7s cubic-bezier(.16,1,.3,1), transform .7s cubic-bezier(.16,1,.3,1); }
+    .reveal-stagger.visible { opacity: 1; transform: translateY(0); }
+
+    .logo-navbar { transform-origin: left center; transition: transform .3s ease; }
+    .logo-navbar:hover { transform: scale(1.03); }
+
+    .roof-svg { position: absolute; bottom: 0; left: 0; width: 100%; height: 50%; opacity: 0.18; pointer-events: none; }
+    .flame-anim { position: absolute; pointer-events: none; animation: flame-flicker 2.4s ease-in-out infinite; transform-origin: bottom center; }
+    @keyframes flame-flicker {
+      0%,100% { transform: scale(1) translateY(0); opacity: 0.85; filter: blur(0.5px); }
+      30%     { transform: scale(1.06,1.12) translateY(-2px); opacity: 1; }
+      60%     { transform: scale(0.94,1.04) translateY(1px); opacity: 0.78; }
+    }
+    .drop-anim { position: absolute; pointer-events: none; opacity: 0; animation: drop-fall-hero 4.2s ease-in infinite; }
+    @keyframes drop-fall-hero {
+      0%   { transform: translateY(-10px) scale(0.5); opacity: 0; }
+      15%  { opacity: 0.85; }
+      80%  { opacity: 0.7; }
+      100% { transform: translateY(180px) scale(1); opacity: 0; }
+    }
+
+    .photo-placeholder { position: relative; background: repeating-linear-gradient(135deg, rgba(232,93,26,0.05) 0, rgba(232,93,26,0.05) 1px, transparent 1px, transparent 14px), linear-gradient(160deg, #F1EBE4 0%, #DDD2C5 100%); border: 1px dashed rgba(232,93,26,0.32); border-radius: 18px; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+    .photo-placeholder.dark { background: repeating-linear-gradient(135deg, rgba(255,255,255,0.04) 0, rgba(255,255,255,0.04) 1px, transparent 1px, transparent 14px), linear-gradient(160deg, #2A2218 0%, #082A4D 100%); border: 1px dashed rgba(255,195,154,0.32); }
+    .photo-placeholder .ph-inner { font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: 0.02em; color: rgba(165,55,7,0.85); padding: 14px 20px; text-align: center; max-width: 82%; text-transform: none; line-height: 1.55; }
+    .photo-placeholder.dark .ph-inner { color: rgba(255,195,154,0.9); }
+    .photo-placeholder .ph-tag { display: inline-block; font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; padding: 3px 8px; border-radius: 4px; margin-bottom: 8px; background: rgba(232,93,26,0.14); color: var(--brand-600); }
+    .photo-placeholder.dark .ph-tag { background: rgba(255,195,154,0.18); color: #FFC79A; }
+    .photo-placeholder .ph-icon { opacity: 0.4; margin-bottom: 10px; display: flex; justify-content: center; }
+
+    .univers-card { background: white; border-radius: 24px; padding: 36px 32px; border: 1px solid #F1EBE4; position: relative; overflow: hidden; transition: all .4s cubic-bezier(.23,1,.32,1); display: block; }
+    .univers-card::before { content: ''; position: absolute; left: 0; right: 0; top: 0; height: 4px; background: linear-gradient(90deg, var(--brand), var(--azur)); transform: scaleX(0); transform-origin: left; transition: transform .5s cubic-bezier(.4,0,.2,1); }
+    .univers-card:hover { transform: translateY(-8px); box-shadow: 0 36px 60px -24px rgba(26,20,13,0.18); border-color: #FFC79A; }
+    .univers-card:hover::before { transform: scaleX(1); }
+    .univers-card .icon-wrap { width: 64px; height: 64px; border-radius: 16px; background: linear-gradient(135deg, #FFF4EC 0%, #EAF4FF 100%); color: var(--brand-600); display: flex; align-items: center; justify-content: center; margin-bottom: 22px; transition: all .35s ease; }
+    .univers-card:hover .icon-wrap { background: linear-gradient(135deg, var(--brand) 0%, var(--azur-700) 100%); color: white; transform: rotate(-4deg) scale(1.06); }
+
+    .quick-card { padding: 28px 30px; border-radius: 20px; display: flex; align-items: center; gap: 22px; transition: all .3s ease; }
+    .quick-card.white { background: white; color: var(--brand-600); box-shadow: 0 24px 44px -24px rgba(26,20,13,0.18); border: 1px solid #F1EBE4; }
+    .quick-card.gradient { background: linear-gradient(135deg, var(--brand) 0%, var(--brand-600) 50%, var(--azur-700) 100%); color: white; box-shadow: 0 26px 48px -16px rgba(232,93,26,0.45); }
+    .quick-card.azur { background: linear-gradient(135deg, var(--azur-700) 0%, #082A4D 100%); color: white; box-shadow: 0 26px 48px -16px rgba(11,59,107,0.45); }
+
+    .tools-track { display: flex; gap: 22px; padding: 4px 4px 24px 4px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: thin; scrollbar-color: #DDD2C5 transparent; }
+    .tools-track::-webkit-scrollbar { height: 6px; }
+    .tools-track::-webkit-scrollbar-track { background: transparent; }
+    .tools-track::-webkit-scrollbar-thumb { background: #DDD2C5; border-radius: 3px; }
+    .tool-card { flex: 0 0 320px; scroll-snap-align: start; background: white; border-radius: 20px; padding: 26px 24px; border: 1px solid #F1EBE4; transition: all .3s ease; }
+    .tool-card:hover { transform: translateY(-4px); box-shadow: 0 24px 42px -22px rgba(26,20,13,0.18); border-color: var(--brand-200); }
+    .tool-card .tool-icon { width: 52px; height: 52px; border-radius: 14px; background: linear-gradient(135deg, #FFF4EC, #EAF4FF); color: var(--brand-600); display: flex; align-items: center; justify-content: center; margin-bottom: 16px; }
+
+    .ba-slider { position: relative; width: 100%; overflow: hidden; border-radius: 24px; user-select: none; box-shadow: 0 30px 60px -20px rgba(26,20,13,0.25); }
+    .ba-after, .ba-before { position: absolute; inset: 0; }
+    .ba-before { clip-path: inset(0 50% 0 0); }
+    .ba-handle { position: absolute; top: 0; bottom: 0; left: 50%; width: 4px; background: white; transform: translateX(-50%); cursor: ew-resize; z-index: 5; box-shadow: 0 0 20px rgba(0,0,0,0.25); }
+    .ba-handle-circle { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 56px; height: 56px; border-radius: 50%; background: white; display: flex; align-items: center; justify-content: center; color: var(--brand); box-shadow: 0 10px 25px rgba(0,0,0,0.25); }
+    .ba-label { position: absolute; top: 18px; padding: 7px 16px; border-radius: 999px; font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; backdrop-filter: blur(6px); z-index: 4; }
+    .ba-label.before { left: 18px; background: rgba(26,20,13,0.78); color: white; }
+    .ba-label.after  { right: 18px; background: rgba(232,93,26,0.92); color: white; }
+
+    .avis-card { background: white; border-radius: 22px; padding: 32px; border: 1px solid #F1EBE4; transition: all .3s ease; position: relative; }
+    .avis-card:hover { transform: translateY(-4px); box-shadow: 0 28px 48px -22px rgba(26,20,13,0.18); border-color: var(--brand-200); }
+    .avis-card .quote-mark { position: absolute; top: 18px; right: 22px; font-family: 'Playfair Display', serif; font-size: 64px; line-height: 1; color: rgba(232,93,26,0.12); }
+    .star { color: #F2A52F; }
+
+    .partners-marquee { overflow: hidden; mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent); -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent); }
+    .partners-track { display: flex; gap: 36px; animation: partners-scroll 42s linear infinite; width: max-content; }
+    @keyframes partners-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    .partner-card { flex: 0 0 auto; display: flex; align-items: center; justify-content: center; height: 88px; min-width: 220px; padding: 0 32px; border-radius: 16px; background: white; border: 1px solid #F1EBE4; transition: all .35s cubic-bezier(.4,0,.2,1); }
+    .partner-card:hover { transform: translateY(-4px); box-shadow: 0 22px 42px -20px rgba(26,20,13,0.18); border-color: var(--brand-200); }
+    .brand-wm { font-family: 'Bebas Neue', 'Arial Black', sans-serif; font-weight: 800; font-size: 28px; letter-spacing: 0.04em; white-space: nowrap; line-height: 1; }
+    .brand-onduline { color: #C8102E; }
+    .brand-iko { color: #003366; letter-spacing: 0.12em; }
+    .brand-soprema { color: #E30613; font-style: italic; }
+    .brand-velux { color: #00295E; font-family: 'Inter', sans-serif; font-weight: 900; }
+    .brand-imerys { color: #B5121B; }
+    .brand-sika { color: #D7262C; letter-spacing: 0.12em; }
+    .brand-knauf { color: #006B3F; }
+    .brand-honeywell { color: #E20100; letter-spacing: 0.05em; }
+
+    .form-label { display: block; font-size: 11px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(255,255,255,0.95); margin-bottom: 8px; font-family: 'Inter', sans-serif; }
+    .form-field { width: 100%; background: white; border: 1px solid transparent; color: var(--ink); padding: 13px 16px; border-radius: 10px; font-size: 14px; transition: all .25s ease; font-family: 'Inter', sans-serif; }
+    .form-field::placeholder { color: #8B7866; }
+    .form-field:focus { outline: none; border-color: var(--brand); box-shadow: 0 0 0 4px rgba(232,93,26,0.18); }
+
+    .float-cta { animation: pulseRing 2.6s ease-in-out infinite; }
+    @keyframes pulseRing {
+      0%,100% { box-shadow: 0 6px 24px rgba(232,93,26,0.5), 0 0 0 0 rgba(232,93,26,0.4); }
+      50%     { box-shadow: 0 6px 24px rgba(232,93,26,0.6), 0 0 0 16px rgba(232,93,26,0); }
+    }
+
+    .flame-pulse { animation: flame-pulse 1.6s ease-in-out infinite; }
+    @keyframes flame-pulse {
+      0%,100% { transform: scale(1); filter: drop-shadow(0 0 8px rgba(255,255,255,0.4)); }
+      50%     { transform: scale(1.08); filter: drop-shadow(0 0 16px rgba(255,255,255,0.7)); }
+    }
+
+    .seal { width: 200px; height: 200px; border-radius: 50%; background: linear-gradient(135deg, #E85D1A 0%, #C9460E 60%, #7E2A05 100%); display: flex; align-items: center; justify-content: center; flex-direction: column; color: white; text-align: center; box-shadow: 0 24px 50px -16px rgba(232,93,26,0.55), inset 0 0 0 6px rgba(255,255,255,0.18), inset 0 0 0 12px rgba(255,255,255,0.05); position: relative; flex-shrink: 0; }
+    .seal::before { content: ''; position: absolute; inset: -10px; border-radius: 50%; border: 1.5px dashed rgba(232,93,26,0.4); animation: seal-spin 28s linear infinite; }
+    @keyframes seal-spin { to { transform: rotate(360deg); } }
+
+    .zone-item { display: flex; align-items: center; gap: 10px; padding: 7px 0; color: rgba(255,255,255,0.82); font-size: 14px; transition: color .2s ease; }
+    .zone-item:hover { color: #FFC79A; }
+
+    ::-webkit-scrollbar { width: 10px; }
+    ::-webkit-scrollbar-track { background: #FAF7F4; }
+    ::-webkit-scrollbar-thumb { background: linear-gradient(180deg, var(--brand), var(--azur)); border-radius: 10px; }
+
+    .trust-pill { display: inline-flex; align-items: center; gap: 8px; padding: 7px 14px; border-radius: 999px; background: rgba(255,255,255,0.10); border: 1px solid rgba(255,255,255,0.22); color: rgba(255,255,255,0.92); font-size: 12px; letter-spacing: 0.06em; backdrop-filter: blur(8px); }
+
+    .accent-underline { position: relative; display: inline-block; }
+    .accent-underline svg { position: absolute; left: 0; bottom: -10px; width: 100%; height: 14px; }
+
+    .wave-divider svg { display: block; width: 100%; height: auto; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .flame-anim, .drop-anim, .flame-pulse, .seal::before, .partners-track { animation: none !important; }
+    }
+  </style>
+
+  <!-- JSON-LD LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["RoofingContractor","LocalBusiness"],
+    "name": "Medétanch",
+    "image": "https://medetanch-bordeaux.pages.dev/assets/img/logo-medetanch.png",
+    "telephone": "+33755796718",
+    "email": "medetanch@gmail.com",
+    "url": "https://medetanch-bordeaux.pages.dev/",
+    "address": {"@type":"PostalAddress","addressLocality":"Bordeaux","postalCode":"33000","addressCountry":"FR"},
+    "geo": {"@type":"GeoCoordinates","latitude":44.8378,"longitude":-0.5792},
+    "areaServed": [
+      {"@type":"City","name":"Bordeaux"},
+      {"@type":"City","name":"Mérignac"},
+      {"@type":"City","name":"Pessac"},
+      {"@type":"City","name":"Talence"},
+      {"@type":"AdministrativeArea","name":"Gironde"}
+    ],
+    "openingHoursSpecification": [
+      {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"07:30","closes":"19:00"},
+      {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"08:00","closes":"17:00"}
+    ],
+    "priceRange": "€€",
+    "description": "Couvreur, étancheur et paysagiste à Bordeaux. Réfection toiture, démoussage, isolation, recherche de fuite, terrasse bois, entretien d'extérieur. Astreinte 24/7 en Gironde."
+  }
+  </script>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar hidden md:block">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-9">
+    <span class="uppercase tracking-widest text-[11px]">Couvreur · Étanchéité · Paysage — Bordeaux Métropole & Gironde · Astreinte 24/7</span>
+    <div class="flex items-center gap-6 text-[11px]">
+      <a href="tel:0755796718" class="flex items-center gap-2 hover:text-white transition"><i data-lucide="phone" class="w-3 h-3"></i> 07 55 79 67 18</a>
+      <a href="mailto:medetanch@gmail.com" class="flex items-center gap-2 hover:text-white transition"><i data-lucide="mail" class="w-3 h-3"></i> medetanch@gmail.com</a>
+      <span class="flex items-center gap-2 text-brand-200"><i data-lucide="clock" class="w-3 h-3"></i> Lun–Ven 7h30–19h</span>
+    </div>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar" class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-ink-100 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-20">
+      <a href="index.html" class="flex items-center gap-2" aria-label="Medétanch — Accueil" aria-current="page">
+        <img src="assets/img/logo-medetanch.png" alt="Medétanch — Couvreur, étanchéité, paysage" class="h-14 md:h-16 w-auto logo-navbar" />
+      </a>
+      <div class="hidden lg:flex items-center gap-9">
+        <a href="index.html" class="nav-link active" aria-current="page">Accueil</a>
+        <a href="couverture.html" class="nav-link">Couverture</a>
+        <a href="etancheite.html" class="nav-link">Étanchéité</a>
+        <a href="paysage.html" class="nav-link">Paysage</a>
+        <a href="a-propos.html" class="nav-link">À propos</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="contact.html#devis" class="hidden sm:inline-flex btn btn-primary">
+          <i data-lucide="file-text" class="w-4 h-4"></i> Devis gratuit
+        </a>
+        <button id="burger-btn" class="lg:hidden p-2 rounded-lg text-ink-800" aria-label="Menu">
+          <i id="burger-icon" data-lucide="menu" class="w-7 h-7"></i>
+          <i id="close-icon" data-lucide="x" class="w-7 h-7 hidden"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div id="mobile-menu" class="hidden lg:hidden border-t border-ink-100 bg-white">
+    <div class="px-4 py-4 space-y-1">
+      <a href="index.html" class="block px-4 py-3 rounded-lg font-medium text-sm text-ink-700 hover:bg-ink-50" aria-current="page">Accueil</a>
+      <a href="couverture.html" class="block px-4 py-3 rounded-lg font-medium text-sm text-ink-700 hover:bg-ink-50">Couverture</a>
+      <a href="etancheite.html" class="block px-4 py-3 rounded-lg font-medium text-sm text-ink-700 hover:bg-ink-50">Étanchéité</a>
+      <a href="paysage.html" class="block px-4 py-3 rounded-lg font-medium text-sm text-ink-700 hover:bg-ink-50">Paysage</a>
+      <a href="a-propos.html" class="block px-4 py-3 rounded-lg font-medium text-sm text-ink-700 hover:bg-ink-50">À propos</a>
+      <a href="contact.html" class="block px-4 py-3 rounded-lg font-medium text-sm text-ink-700 hover:bg-ink-50">Contact</a>
+      <a href="contact.html#devis" class="block text-center mt-3 btn btn-primary w-full">Devis gratuit</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero" class="relative overflow-hidden bg-hero">
+  <div class="absolute inset-0 opacity-[0.06]" style="background-image: radial-gradient(circle at 1px 1px, white 1px, transparent 0); background-size: 32px 32px;"></div>
+
+  <svg class="roof-svg" viewBox="0 0 1440 280" preserveAspectRatio="none" fill="none" aria-hidden="true">
+    <defs>
+      <linearGradient id="tile-grad" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%"  stop-color="#FA822F" stop-opacity="0.7"/>
+        <stop offset="100%" stop-color="#1976D2" stop-opacity="0.3"/>
+      </linearGradient>
+    </defs>
+    <g stroke="url(#tile-grad)" stroke-width="1.5">
+      <path d="M0 60 Q 30 40, 60 60 Q 90 40, 120 60 Q 150 40, 180 60 Q 210 40, 240 60 Q 270 40, 300 60 Q 330 40, 360 60 Q 390 40, 420 60 Q 450 40, 480 60 Q 510 40, 540 60 Q 570 40, 600 60 Q 630 40, 660 60 Q 690 40, 720 60 Q 750 40, 780 60 Q 810 40, 840 60 Q 870 40, 900 60 Q 930 40, 960 60 Q 990 40, 1020 60 Q 1050 40, 1080 60 Q 1110 40, 1140 60 Q 1170 40, 1200 60 Q 1230 40, 1260 60 Q 1290 40, 1320 60 Q 1350 40, 1380 60 Q 1410 40, 1440 60"/>
+      <path d="M0 110 Q 30 90, 60 110 Q 90 90, 120 110 Q 150 90, 180 110 Q 210 90, 240 110 Q 270 90, 300 110 Q 330 90, 360 110 Q 390 90, 420 110 Q 450 90, 480 110 Q 510 90, 540 110 Q 570 90, 600 110 Q 630 90, 660 110 Q 690 90, 720 110 Q 750 90, 780 110 Q 810 90, 840 110 Q 870 90, 900 110 Q 930 90, 960 110 Q 990 90, 1020 110 Q 1050 90, 1080 110 Q 1110 90, 1140 110 Q 1170 90, 1200 110 Q 1230 90, 1260 110 Q 1290 90, 1320 110 Q 1350 90, 1380 110 Q 1410 90, 1440 110"/>
+      <path d="M0 160 Q 30 140, 60 160 Q 90 140, 120 160 Q 150 140, 180 160 Q 210 140, 240 160 Q 270 140, 300 160 Q 330 140, 360 160 Q 390 140, 420 160 Q 450 140, 480 160 Q 510 140, 540 160 Q 570 140, 600 160 Q 630 140, 660 160 Q 690 140, 720 160 Q 750 140, 780 160 Q 810 140, 840 160 Q 870 140, 900 160 Q 930 140, 960 160 Q 990 140, 1020 160 Q 1050 140, 1080 160 Q 1110 140, 1140 160 Q 1170 140, 1200 160 Q 1230 140, 1260 160 Q 1290 140, 1320 160 Q 1350 140, 1380 160 Q 1410 140, 1440 160"/>
+      <path d="M0 210 Q 30 190, 60 210 Q 90 190, 120 210 Q 150 190, 180 210 Q 210 190, 240 210 Q 270 190, 300 210 Q 330 190, 360 210 Q 390 190, 420 210 Q 450 190, 480 210 Q 510 190, 540 210 Q 570 190, 600 210 Q 630 190, 660 210 Q 690 190, 720 210 Q 750 190, 780 210 Q 810 190, 840 210 Q 870 190, 900 210 Q 930 190, 960 210 Q 990 190, 1020 210 Q 1050 190, 1080 210 Q 1110 190, 1140 210 Q 1170 190, 1200 210 Q 1230 190, 1260 210 Q 1290 190, 1320 210 Q 1350 190, 1380 210 Q 1410 190, 1440 210"/>
+    </g>
+  </svg>
+
+  <!-- 3 micro-flammes animées -->
+  <svg class="flame-anim" style="top: 22%; left: 14%; width: 22px; height: 32px; animation-delay: 0s;" viewBox="0 0 22 32" aria-hidden="true">
+    <defs><linearGradient id="fl1" x1="50%" y1="0%" x2="50%" y2="100%"><stop offset="0%" stop-color="#FFD24A"/><stop offset="55%" stop-color="#FA822F"/><stop offset="100%" stop-color="#D7281F"/></linearGradient></defs>
+    <path d="M11 2 C 5 10, 4 18, 11 22 C 18 18, 17 10, 13 2 C 13 7, 11 7, 11 2 Z M 11 18 C 8 22, 8 28, 11 30 C 14 28, 14 22, 11 18 Z" fill="url(#fl1)"/>
+  </svg>
+  <svg class="flame-anim" style="top: 38%; right: 18%; width: 18px; height: 26px; animation-delay: .8s;" viewBox="0 0 22 32" aria-hidden="true">
+    <defs><linearGradient id="fl2" x1="50%" y1="0%" x2="50%" y2="100%"><stop offset="0%" stop-color="#FFD24A"/><stop offset="55%" stop-color="#FA822F"/><stop offset="100%" stop-color="#D7281F"/></linearGradient></defs>
+    <path d="M11 2 C 5 10, 4 18, 11 22 C 18 18, 17 10, 13 2 C 13 7, 11 7, 11 2 Z M 11 18 C 8 22, 8 28, 11 30 C 14 28, 14 22, 11 18 Z" fill="url(#fl2)"/>
+  </svg>
+  <svg class="flame-anim" style="top: 62%; left: 8%; width: 16px; height: 24px; animation-delay: 1.4s;" viewBox="0 0 22 32" aria-hidden="true">
+    <defs><linearGradient id="fl3" x1="50%" y1="0%" x2="50%" y2="100%"><stop offset="0%" stop-color="#FFD24A"/><stop offset="55%" stop-color="#FA822F"/><stop offset="100%" stop-color="#D7281F"/></linearGradient></defs>
+    <path d="M11 2 C 5 10, 4 18, 11 22 C 18 18, 17 10, 13 2 C 13 7, 11 7, 11 2 Z M 11 18 C 8 22, 8 28, 11 30 C 14 28, 14 22, 11 18 Z" fill="url(#fl3)"/>
+  </svg>
+
+  <!-- 3 gouttes d'eau -->
+  <svg class="drop-anim" style="top: 14%; left: 28%; width: 12px; height: 18px; animation-delay: .3s;" viewBox="0 0 12 18" aria-hidden="true">
+    <defs><linearGradient id="dr1" x1="50%" y1="0%" x2="50%" y2="100%"><stop offset="0%" stop-color="#A0CAFF"/><stop offset="100%" stop-color="#1976D2"/></linearGradient></defs>
+    <path d="M6 0 C 2 6, 0 12, 6 17 C 12 12, 10 6, 6 0 Z" fill="url(#dr1)"/>
+  </svg>
+  <svg class="drop-anim" style="top: 18%; right: 32%; width: 10px; height: 14px; animation-delay: 1.6s;" viewBox="0 0 12 18" aria-hidden="true">
+    <defs><linearGradient id="dr2" x1="50%" y1="0%" x2="50%" y2="100%"><stop offset="0%" stop-color="#A0CAFF"/><stop offset="100%" stop-color="#1976D2"/></linearGradient></defs>
+    <path d="M6 0 C 2 6, 0 12, 6 17 C 12 12, 10 6, 6 0 Z" fill="url(#dr2)"/>
+  </svg>
+  <svg class="drop-anim" style="top: 12%; left: 58%; width: 11px; height: 16px; animation-delay: 2.8s;" viewBox="0 0 12 18" aria-hidden="true">
+    <defs><linearGradient id="dr3" x1="50%" y1="0%" x2="50%" y2="100%"><stop offset="0%" stop-color="#A0CAFF"/><stop offset="100%" stop-color="#1976D2"/></linearGradient></defs>
+    <path d="M6 0 C 2 6, 0 12, 6 17 C 12 12, 10 6, 6 0 Z" fill="url(#dr3)"/>
+  </svg>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+      <div class="lg:col-span-7">
+        <div class="reveal">
+          <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full backdrop-blur-md bg-white/10 border border-white/20 text-white text-[11px] font-bold tracking-[0.22em] uppercase font-mono">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-500"></span>
+            </span>
+            Astreinte 24/7 — Bordeaux & Gironde
+          </div>
+        </div>
+
+        <h1 class="text-white text-6xl sm:text-7xl lg:text-[6rem] xl:text-[7rem] leading-[0.92] mt-6 mb-6 reveal">
+          L'étanchéité<br/>
+          dans les <span class="text-gradient-fire">règles,</span><br/>
+          <span class="font-serif-h text-5xl sm:text-6xl lg:text-7xl xl:text-[5rem] italic font-normal text-white/95">la couverture</span><br/>
+          <span class="accent-underline">comme avant.
+            <svg viewBox="0 0 320 14" preserveAspectRatio="none" fill="none">
+              <path d="M2 8 Q 80 2, 160 8 T 318 8" stroke="url(#hund)" stroke-width="3" stroke-linecap="round" fill="none"/>
+              <defs>
+                <linearGradient id="hund" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%"  stop-color="#FA822F"/>
+                  <stop offset="100%" stop-color="#6DAEFF"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </span>
+        </h1>
+
+        <p class="text-white/85 text-lg sm:text-xl font-light mb-9 max-w-xl reveal leading-relaxed">
+          Couvreur, étancheur et paysagiste à Bordeaux. <span class="text-white font-medium">Artisan seul</span>, je m'engage personnellement sur chaque chantier — du diagnostic jusqu'à la garantie écrite.
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-start sm:items-center gap-4 reveal">
+          <a href="tel:0755796718" class="btn btn-primary">
+            <i data-lucide="phone" class="w-4 h-4"></i>
+            07 55 79 67 18
+          </a>
+          <a href="contact.html#devis" class="btn btn-outline-light">
+            Devis gratuit sous 48h
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+        <div class="mt-12 flex flex-wrap items-center gap-3 reveal">
+          <span class="trust-pill"><i data-lucide="shield-check" class="w-3.5 h-3.5 text-brand-300"></i> Décennale</span>
+          <span class="trust-pill"><i data-lucide="hammer" class="w-3.5 h-3.5 text-brand-300"></i> 12 ans de métier</span>
+          <span class="trust-pill"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-azur-300"></i> 100 km autour</span>
+          <span class="trust-pill"><i data-lucide="zap" class="w-3.5 h-3.5 text-brand-300"></i> Réponse 24h</span>
+        </div>
+      </div>
+
+      <div class="lg:col-span-5 relative reveal-right">
+        <div class="aspect-[4/5] rounded-3xl overflow-hidden">
+  <img src="https://cdn.jsdelivr.net/gh/mouradlatreche44/batipro-image-library@main/09-artisan-team/ambiance-tony-chantier.jpg" alt="Artisan couvreur Medétanch en intervention sur une toiture en tuile canal à Bordeaux" class="object-cover w-full h-full" loading="eager" decoding="async" />
+</div>
+        </div>
+
+        <div class="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-2xl p-5 max-w-[290px] hidden sm:block reveal">
+          <div class="flex items-center gap-3 mb-2">
+            <div class="w-12 h-12 rounded-xl flex items-center justify-center shrink-0" style="background: linear-gradient(135deg, var(--brand), var(--azur-700));">
+              <i data-lucide="flame" class="w-6 h-6 text-white"></i>
+            </div>
+            <div>
+              <div class="text-2xl text-brand-700 leading-tight">Chalumeau gaz</div>
+              <div class="text-[10px] text-ink-500 uppercase tracking-widest font-mono">Bicouche · 25 ans</div>
+            </div>
+          </div>
+          <p class="text-[12px] text-ink-600 leading-snug">L'étanchéité bitumineuse posée à la flamme — celle qui tient quand elle est faite par un homme du métier.</p>
+        </div>
+
+        <div class="absolute -top-5 -right-5 hidden md:block">
+          <div class="w-24 h-24 rounded-full flex items-center justify-center text-white text-center leading-tight" style="background: linear-gradient(135deg, #E85D1A, #C9460E); box-shadow: 0 16px 32px -10px rgba(232,93,26,0.55);">
+            <div>
+              <div class="text-3xl">10</div>
+              <div class="text-[9px] tracking-[0.2em] font-mono font-normal mt-0.5">ANS</div>
+              <div class="text-[8px] tracking-[0.18em] font-mono font-normal opacity-80">DÉCENNALE</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="wave-divider absolute bottom-0 left-0 w-full z-10">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none" fill="#FFFAF5">
+      <path d="M0,30 C240,60 480,0 720,30 C960,60 1200,0 1440,30 L1440,60 L0,60 Z"/>
+    </svg>
+  </div>
+</section>
+
+<!-- QUICK INFO -->
+<section class="relative z-20 -mt-10 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-5">
+    <div class="quick-card white reveal relative" style="padding-top:34px;">
+      <div class="absolute -top-4 left-6 w-10 h-10 rounded-full flex items-center justify-center shadow-lg ring-4 ring-white" style="background: linear-gradient(135deg, var(--brand), var(--brand-600)); color: white;">
+        <i data-lucide="file-text" class="w-5 h-5"></i>
+      </div>
+      <div class="flex-shrink-0 w-14 h-14 rounded-xl bg-brand-50 flex items-center justify-center text-brand-700">
+        <i data-lucide="clipboard-check" class="w-7 h-7"></i>
+      </div>
+      <div>
+        <div class="text-2xl leading-none text-brand-700">Devis gratuit 48h</div>
+        <div class="text-ink-500 text-sm mt-2">Diagnostic sur site, devis détaillé, prix ferme — sans engagement.</div>
+      </div>
+    </div>
+
+    <div class="quick-card gradient reveal relative md:translate-y-4" style="padding-top:34px;">
+      <div class="absolute -top-4 left-6 w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-lg" style="color: var(--brand);">
+        <i data-lucide="phone-call" class="w-5 h-5"></i>
+      </div>
+      <div class="flex-shrink-0 w-14 h-14 rounded-xl bg-white/20 flex items-center justify-center">
+        <i data-lucide="alarm-clock" class="w-7 h-7"></i>
+      </div>
+      <div>
+        <div class="text-2xl leading-none">Astreinte 24/7</div>
+        <div class="text-white/90 text-sm mt-2">Fuite, infiltration, tuile envolée — un seul numéro, une seule personne.</div>
+      </div>
+    </div>
+
+    <div class="quick-card azur reveal relative" style="padding-top:34px;">
+      <div class="absolute -top-4 left-6 w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-lg" style="color: var(--azur-700);">
+        <i data-lucide="shield-check" class="w-5 h-5"></i>
+      </div>
+      <div class="flex-shrink-0 w-14 h-14 rounded-xl bg-white/15 flex items-center justify-center">
+        <i data-lucide="award" class="w-7 h-7"></i>
+      </div>
+      <div>
+        <div class="text-2xl leading-none">Garantie 10 ans</div>
+        <div class="text-white/90 text-sm mt-2">Décennale couverture & étanchéité, garantie écrite remise en fin de chantier.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LES 3 UNIVERS METIER -->
+<section id="services" class="py-20 lg:py-28">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16 reveal">
+      <div class="section-label justify-center">Trois métiers · Un seul interlocuteur</div>
+      <h2 class="text-ink-800 text-5xl sm:text-6xl lg:text-7xl mb-5 leading-[0.95]">L'artisan complet de<br class="hidden sm:block"/> <span class="text-gradient-logo">votre maison.</span></h2>
+      <p class="text-ink-600 max-w-2xl mx-auto font-serif-h italic text-lg">Couvreur le matin, étancheur l'après-midi, paysagiste le samedi — la maison, c'est un tout.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-7">
+
+      <a href="couverture.html" class="univers-card reveal-stagger">
+        <div class="icon-wrap"><i data-lucide="home" class="w-8 h-8"></i></div>
+        <div class="text-[11px] font-mono uppercase tracking-[0.2em] text-brand-500 mb-2">01 — Couverture</div>
+        <h3 class="text-3xl text-ink-800 mb-3 leading-none">Couverture & toiture</h3>
+        <p class="text-ink-500 text-sm mb-5">Réfection · Démoussage · Isolation</p>
+        <p class="text-ink-600 text-sm leading-relaxed mb-6">Refaire, entretenir et isoler votre toit avec les techniques traditionnelles. Tuile canal, ardoise, zinc — chaque matériau a sa main.</p>
+        <ul class="space-y-2 mb-7">
+          <li class="flex items-start gap-3 text-sm text-ink-700"><i data-lucide="check" class="w-4 h-4 text-brand-500 mt-0.5 flex-shrink-0"></i> Réfection complète de toiture</li>
+          <li class="flex items-start gap-3 text-sm text-ink-700"><i data-lucide="check" class="w-4 h-4 text-brand-500 mt-0.5 flex-shrink-0"></i> Démoussage & traitement hydrofuge</li>
+          <li class="flex items-start gap-3 text-sm text-ink-700"><i data-lucide="check" class="w-4 h-4 text-brand-500 mt-0.5 flex-shrink-0"></i> Isolation des combles</li>
+          <li class="flex items-start gap-3 text-sm text-ink-700"><i data-lucide="check" class="w-4 h-4 text-brand-500 mt-0.5 flex-shrink-0"></i> Reprise faîtage & solins</li>
+        </ul>
+        <span class="inline-flex items-center gap-2 font-mono text-xs font-bold uppercase tracking-[0.18em] text-brand-600">Voir le métier <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+      </a>
+
+      <a href="etancheite.html" class="univers-card reveal-stagger">
+        <div class="icon-wrap"><i data-lucide="shield-check" class="w-8 h-8"></i></div>
+        <div class="text-[11px] font-mono uppercase tracking-[0.2em] text-brand-500 mb-2">02 — Étanchéité</div>
+        <h3 class="text-3xl text-ink-800 mb-3 leading-none">Étanchéité toiture-terrasse</h3>
+        <p class="text-ink-500 text-sm mb-5">Bitume · Recherche fuite · EPDM</p>
+        <p class="text-ink-600 text-sm leading-relaxed mb-6">L'étanchéité au chalumeau gaz — celle qui dure 25 ans quand elle est posée par un homme du métier. Diagnostic, pose, garantie écrite.</p>
+        <ul class="space-y-2 mb-7">
+          <li class="flex items-start gap-3 text-sm text-ink-700"><i data-lucide="check" class="w-4 h-4 text-brand-500 mt-0.5 flex-shrink-0"></i> Recherche de fuite (caméra thermique)</li>
+          <li class="flex items-start gap-3 text-sm text-ink-700"><i data-lucide="check" class="w-4 h-4 text-brand-500 mt-0.5 flex-shrink-0"></i> Étanchéité bicouche bitumineuse</li>
+          <li class="flex items-start gap-3 text-sm text-ink-700"><i data-lucide="check" class="w-4 h-4 text-brand-500 mt-0.5 flex-shrink-0"></i> Membrane EPDM et PVC</li>
+          <li class="flex items-start gap-3 text-sm text-ink-700"><i data-lucide="check" class="w-4 h-4 text-brand-500 mt-0.5 flex-shrink-0"></i> Reprise ponctuelle d'étanchéité</li>
+        </ul>
+        <span class="inline-flex items-center gap-2 font-mono text-xs font-bold uppercase tracking-[0.18em] text-brand-600">Voir le métier <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+      </a>
+
+      <a href="paysage.html" class="univers-card reveal-stagger">
+        <div class="icon-wrap"><i data-lucide="trees" class="w-8 h-8"></i></div>
+        <div class="text-[11px] font-mono uppercase tracking-[0.2em] text-brand-500 mb-2">03 — Paysage</div>
+        <h3 class="text-3xl text-ink-800 mb-3 leading-none">Paysage & extérieur</h3>
+        <p class="text-ink-500 text-sm mb-5">Terrasse bois · Tonte · Élagage</p>
+        <p class="text-ink-600 text-sm leading-relaxed mb-6">Un seul artisan pour la maison ET le jardin — c'est le sens de Medétanch. Aménagement bois, taille, tonte, entretien annuel.</p>
+        <ul class="space-y-2 mb-7">
+          <li class="flex items-start gap-3 text-sm text-ink-700"><i data-lucide="check" class="w-4 h-4 text-brand-500 mt-0.5 flex-shrink-0"></i> Construction de terrasse bois</li>
+          <li class="flex items-start gap-3 text-sm text-ink-700"><i data-lucide="check" class="w-4 h-4 text-brand-500 mt-0.5 flex-shrink-0"></i> Tonte & contrats annuels</li>
+          <li class="flex items-start gap-3 text-sm text-ink-700"><i data-lucide="check" class="w-4 h-4 text-brand-500 mt-0.5 flex-shrink-0"></i> Élagage & taille de haies</li>
+          <li class="flex items-start gap-3 text-sm text-ink-700"><i data-lucide="check" class="w-4 h-4 text-brand-500 mt-0.5 flex-shrink-0"></i> Création de massifs</li>
+        </ul>
+        <span class="inline-flex items-center gap-2 font-mono text-xs font-bold uppercase tracking-[0.18em] text-brand-600">Voir le métier <i data-lucide="arrow-right" class="w-4 h-4"></i></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION SIGNATURE - LE METIER DANS LES REGLES DE L'ART -->
+<section class="py-20 lg:py-28 bg-ink-50 relative overflow-hidden">
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 mb-12 items-end">
+      <div class="lg:col-span-7 reveal">
+        <div class="section-label">Section signature · L'outil et la main</div>
+        <h2 class="text-ink-800 text-5xl sm:text-6xl lg:text-7xl leading-[0.95] mb-5">
+          Le métier<br/>
+          <span class="font-serif-h italic font-normal text-4xl sm:text-5xl lg:text-6xl text-brand-600">dans les règles</span><br/>
+          <span class="text-gradient-logo">de l'art.</span>
+        </h2>
+      </div>
+      <div class="lg:col-span-5 reveal-right">
+        <p class="text-ink-600 text-base leading-relaxed">
+          Cinq outils, cinq gestes — la base d'un métier qui n'a pas changé depuis 100 ans. À Bordeaux, on continue de poser comme on a toujours posé : le bon outil, la bonne main, et le temps qu'il faut.
+        </p>
+      </div>
+    </div>
+
+    <div class="tools-track reveal-right">
+      <div class="tool-card">
+        <div class="tool-icon"><i data-lucide="flame" class="w-6 h-6"></i></div>
+        <div class="text-[11px] font-mono uppercase tracking-[0.18em] text-brand-500 mb-2">Outil 01</div>
+        <h3 class="text-2xl text-ink-800 mb-2">Chalumeau gaz</h3>
+        <p class="text-ink-600 text-sm leading-relaxed">La pose bicouche bitumineuse à la flamme. La technique reine de l'étanchéité — précise, durable, irremplaçable.</p>
+      </div>
+      <div class="tool-card">
+        <div class="tool-icon"><i data-lucide="construction" class="w-6 h-6"></i></div>
+        <div class="text-[11px] font-mono uppercase tracking-[0.18em] text-brand-500 mb-2">Outil 02</div>
+        <h3 class="text-2xl text-ink-800 mb-2">Mortier traditionnel</h3>
+        <p class="text-ink-600 text-sm leading-relaxed">Faîtage, solins, scellement de tuiles — le mortier bâtard chaux-ciment, dosé à l'ancienne, vit avec la toiture.</p>
+      </div>
+      <div class="tool-card">
+        <div class="tool-icon"><i data-lucide="thermometer" class="w-6 h-6"></i></div>
+        <div class="text-[11px] font-mono uppercase tracking-[0.18em] text-brand-500 mb-2">Outil 03</div>
+        <h3 class="text-2xl text-ink-800 mb-2">Caméra thermique</h3>
+        <p class="text-ink-600 text-sm leading-relaxed">Pour voir ce que l'œil ne voit pas — point froid, infiltration, défaut d'isolation. Diagnostic en moins d'une heure.</p>
+      </div>
+      <div class="tool-card">
+        <div class="tool-icon"><i data-lucide="wind" class="w-6 h-6"></i></div>
+        <div class="text-[11px] font-mono uppercase tracking-[0.18em] text-brand-500 mb-2">Outil 04</div>
+        <h3 class="text-2xl text-ink-800 mb-2">Test fumigène</h3>
+        <p class="text-ink-600 text-sm leading-relaxed">Pour localiser une fuite quand rien d'autre ne marche. La fumée passe par où l'eau passe — imparable.</p>
+      </div>
+      <div class="tool-card">
+        <div class="tool-icon"><i data-lucide="layers" class="w-6 h-6"></i></div>
+        <div class="text-[11px] font-mono uppercase tracking-[0.18em] text-brand-500 mb-2">Outil 05</div>
+        <h3 class="text-2xl text-ink-800 mb-2">Tuile canal</h3>
+        <p class="text-ink-600 text-sm leading-relaxed">La signature des toits girondins. Pose au mortier, recouvrement précis — l'esthétique du Sud-Ouest, gardée intacte.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POURQUOI NOUS -->
+<section class="py-20 lg:py-28 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+
+      <div class="lg:col-span-6 relative reveal-left">
+        <div class="grid grid-cols-2 gap-4 sm:gap-5">
+          <div class="flex flex-col gap-4 sm:gap-5">
+            <div class="aspect-[4/5] overflow-hidden">
+  <img src="https://cdn.jsdelivr.net/gh/mouradlatreche44/batipro-image-library@main/01-toiture/hydrofuge-edb576b1-c422-4097-a43e-d48eba13626b.jpeg" alt="Détail technique d'une pose de tuile canal — savoir-faire artisan" class="object-cover w-full h-full" loading="lazy" decoding="async" />
+</div>
+            </div>
+            <div class="aspect-square overflow-hidden">
+  <img src="https://cdn.jsdelivr.net/gh/mouradlatreche44/batipro-image-library@main/01-toiture/hydrofuge-f2e9f691-87bc-427e-818d-a73c3dd8150a.jpeg" alt="Toiture refaite à neuf après hydrofuge protecteur" class="object-cover w-full h-full" loading="lazy" decoding="async" />
+</div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-4 sm:gap-5 pt-10 sm:pt-14 relative">
+            <div class="relative">
+              <div class="aspect-[4/5] overflow-hidden">
+  <img src="https://cdn.jsdelivr.net/gh/mouradlatreche44/batipro-image-library@main/09-artisan-team/portrait-tony.jpg" alt="Portrait de l'artisan Medétanch sur un chantier de couverture" class="object-cover w-full h-full" loading="lazy" decoding="async" />
+</div>
+              </div>
+              <div class="absolute -bottom-4 -left-4 bg-ink-800 text-white px-5 py-3 rounded-xl shadow-2xl z-10">
+                <div class="text-4xl leading-none flex items-baseline gap-0.5">
+                  <span data-counter="12" data-counter-duration="1400">0</span><span class="text-brand-400">+</span>
+                </div>
+                <div class="text-[10px] text-white/80 tracking-[0.18em] uppercase mt-1 font-mono">Ans de toits girondins</div>
+              </div>
+            </div>
+            <div class="aspect-[4/6] overflow-hidden">
+  <img src="https://cdn.jsdelivr.net/gh/mouradlatreche44/batipro-image-library@main/01-toiture/goutiere-1fcf595e-bc25-4d6d-a8e0-66b588132915.jpeg" alt="Détail d'un solin et d'une descente d'eau pluviale — précision du travail" class="object-cover w-full h-full" loading="lazy" decoding="async" />
+</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-6 reveal-right">
+        <div class="section-label">Pourquoi nous choisir</div>
+        <h2 class="text-ink-800 text-5xl sm:text-6xl leading-[0.95] mb-8">
+          Un homme,<br/>
+          <span class="text-gradient-logo">une parole.</span>
+        </h2>
+
+        <div class="flex gap-4 mb-6">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center mt-0.5" style="background: linear-gradient(135deg, var(--brand), var(--azur-700));">
+            <i data-lucide="check" class="w-5 h-5 text-white"></i>
+          </div>
+          <div>
+            <h3 class="text-xl text-ink-800 mb-1">L'artisan, pas le commercial</h3>
+            <p class="text-ink-600 text-base leading-relaxed">
+              C'est moi qui prends le rendez-vous, moi qui fais le diagnostic, moi qui monte sur le toit, moi qui rédige le devis et moi qui livre le chantier. Pas d'intermédiaire, pas de sous-traitant.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4 mb-6">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center mt-0.5" style="background: linear-gradient(135deg, var(--brand), var(--azur-700));">
+            <i data-lucide="check" class="w-5 h-5 text-white"></i>
+          </div>
+          <div>
+            <h3 class="text-xl text-ink-800 mb-1">Le devis dit ce que je facture</h3>
+            <p class="text-ink-600 text-base leading-relaxed">
+              Devis détaillé sous 48h, prix ferme, aucun supplément en cours de chantier sauf imprévu structurel constaté ensemble. La parole tient.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4 mb-8">
+          <div class="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center mt-0.5" style="background: linear-gradient(135deg, var(--brand), var(--azur-700));">
+            <i data-lucide="check" class="w-5 h-5 text-white"></i>
+          </div>
+          <div>
+            <h3 class="text-xl text-ink-800 mb-1">Le chantier propre, tous les soirs</h3>
+            <p class="text-ink-600 text-base leading-relaxed">
+              Bâche au sol, gravats évacués, voisinage prévenu. On laisse votre maison comme on l'a trouvée — propre, accessible, en sécurité.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 py-6 border-y border-ink-100 mb-8">
+          <div>
+            <div class="text-ink-800 text-3xl leading-none">
+              <span data-counter="100" data-counter-duration="1600" data-counter-suffix=" km">0</span>
+            </div>
+            <div class="text-ink-500 text-[10px] mt-1 tracking-wide uppercase font-mono">Zone autour</div>
+          </div>
+          <div>
+            <div class="text-ink-800 text-3xl leading-none">
+              <span data-counter="48" data-counter-duration="1400" data-counter-suffix="h">0</span>
+            </div>
+            <div class="text-ink-500 text-[10px] mt-1 tracking-wide uppercase font-mono">Délai devis</div>
+          </div>
+          <div>
+            <div class="text-ink-800 text-3xl leading-none">
+              <span data-counter="24" data-counter-duration="1400">0</span><span class="text-azur-600">/7</span>
+            </div>
+            <div class="text-ink-500 text-[10px] mt-1 tracking-wide uppercase font-mono">Astreinte</div>
+          </div>
+          <div>
+            <div class="text-ink-800 text-3xl leading-none">
+              <span data-counter="10" data-counter-duration="1800">0</span><span class="text-brand-500"> ans</span>
+            </div>
+            <div class="text-ink-500 text-[10px] mt-1 tracking-wide uppercase font-mono">Décennale</div>
+          </div>
+        </div>
+
+        <a href="a-propos.html" class="btn btn-azur">L'artisan derrière Medétanch <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- AVANT/APRES -->
+<section class="py-20 lg:py-28 bg-ink-50 relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-5 gap-12 items-center">
+
+      <div class="lg:col-span-2 reveal">
+        <div class="section-label">Une réalisation</div>
+        <h2 class="text-ink-800 text-5xl sm:text-6xl leading-[0.95] mb-6">
+          Toiture refaite<br/>
+          <span class="text-gradient-logo">à l'ancienne.</span>
+        </h2>
+        <p class="text-ink-600 text-base leading-relaxed mb-6">
+          Glissez le curseur pour voir la transformation : maison girondine de 1932 à Caudéran, toiture en tuile canal envahie par les mousses, refaite intégralement avec récupération des tuiles d'origine.
+        </p>
+        <ul class="space-y-3 text-ink-700 text-sm mb-8">
+          <li class="flex items-center gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-500"></i> Dépose, tri, repose des tuiles d'époque</li>
+          <li class="flex items-center gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-azur-600"></i> Écran sous-toiture HPV neuf</li>
+          <li class="flex items-center gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-brand-500"></i> Faîtage scellé au mortier</li>
+          <li class="flex items-center gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-azur-600"></i> Chantier livré en 8 jours ouvrés</li>
+        </ul>
+        <a href="contact.html#devis" class="btn btn-primary">Demander un devis<i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+      </div>
+
+      <div class="lg:col-span-3 reveal-right">
+        <div id="ba-slider" class="ba-slider aspect-[16/10]">
+          <div class="ba-after">
+            <div class="w-full h-full overflow-hidden" style="border-radius:0;">
+  <img src="https://cdn.jsdelivr.net/gh/mouradlatreche44/batipro-image-library@main/01-toiture/hydrofuge-avant-apres.jpg" alt="Toiture après intervention Medétanch — démoussage et hydrofuge" class="object-cover w-full h-full" loading="lazy" decoding="async" />
+</div>
+            </div>
+          </div>
+          <div class="ba-before">
+            <div class="w-full h-full overflow-hidden" style="border-radius:0;">
+  <img src="https://cdn.jsdelivr.net/gh/mouradlatreche44/batipro-image-library@main/01-toiture/hydrofuge-8e268965-3944-4e22-8301-a98d0f4b7e11.jpeg" alt="Toiture avant intervention — mousses, lichens et tuiles encrassées" class="object-cover w-full h-full" loading="lazy" decoding="async" />
+</div>
+            </div>
+          </div>
+          <div class="ba-label before">Avant</div>
+          <div class="ba-label after">Après</div>
+          <div id="ba-handle" class="ba-handle">
+            <div class="ba-handle-circle">
+              <i data-lucide="move-horizontal" class="w-5 h-5"></i>
+            </div>
+          </div>
+        </div>
+        <p class="text-center mt-4 text-xs font-mono text-ink-400">Faites glisser le curseur pour comparer</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS 4 ETAPES -->
+<section class="py-20 lg:py-28 relative overflow-hidden bg-hero">
+  <div class="absolute inset-0 opacity-[0.06]" style="background-image: radial-gradient(circle at 1px 1px, white 1px, transparent 0); background-size: 32px 32px;"></div>
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-14 reveal">
+      <div class="section-label light justify-center">Notre méthode</div>
+      <h2 class="text-white text-5xl sm:text-6xl mb-4 leading-[0.95]">Du diagnostic<br class="sm:hidden"/> à la garantie.</h2>
+      <p class="text-white/70 max-w-2xl mx-auto font-serif-h italic text-lg">Quatre étapes claires — pas une de plus.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+      <div class="text-center reveal-stagger">
+        <div class="w-24 h-24 mx-auto mb-5 rounded-full flex items-center justify-center border-2 border-white/20 text-white relative" style="background: rgba(232,93,26,0.18);">
+          <i data-lucide="search" class="w-10 h-10"></i>
+          <div class="absolute -top-2 -right-2 w-9 h-9 rounded-full bg-brand-500 text-white flex items-center justify-center text-base">1</div>
+        </div>
+        <div class="inline-block text-white text-[10px] font-bold px-3 py-1 rounded-full tracking-[0.22em] mb-3 font-mono" style="background: rgba(255,255,255,0.12);">DIAGNOSTIC</div>
+        <h3 class="text-white text-2xl mb-2 leading-none">Sur place, gratuit</h3>
+        <p class="text-white/75 text-sm leading-relaxed">Visite sous 48h, montée sur le toit, photos, mesures, échanges sur vos contraintes.</p>
+      </div>
+      <div class="text-center reveal-stagger">
+        <div class="w-24 h-24 mx-auto mb-5 rounded-full flex items-center justify-center border-2 border-white/20 text-white relative" style="background: rgba(25,118,210,0.18);">
+          <i data-lucide="file-text" class="w-10 h-10"></i>
+          <div class="absolute -top-2 -right-2 w-9 h-9 rounded-full bg-brand-500 text-white flex items-center justify-center text-base">2</div>
+        </div>
+        <div class="inline-block text-white text-[10px] font-bold px-3 py-1 rounded-full tracking-[0.22em] mb-3 font-mono" style="background: rgba(255,255,255,0.12);">DEVIS</div>
+        <h3 class="text-white text-2xl mb-2 leading-none">Détaillé, ferme</h3>
+        <p class="text-white/75 text-sm leading-relaxed">Sous 48h après visite, prix ligne par ligne, durée annoncée, aucun supplément caché.</p>
+      </div>
+      <div class="text-center reveal-stagger">
+        <div class="w-24 h-24 mx-auto mb-5 rounded-full flex items-center justify-center border-2 border-white/20 text-white relative" style="background: rgba(232,93,26,0.18);">
+          <i data-lucide="hammer" class="w-10 h-10"></i>
+          <div class="absolute -top-2 -right-2 w-9 h-9 rounded-full bg-brand-500 text-white flex items-center justify-center text-base">3</div>
+        </div>
+        <div class="inline-block text-white text-[10px] font-bold px-3 py-1 rounded-full tracking-[0.22em] mb-3 font-mono" style="background: rgba(255,255,255,0.12);">CHANTIER</div>
+        <h3 class="text-white text-2xl mb-2 leading-none">Propre, à l'heure</h3>
+        <p class="text-white/75 text-sm leading-relaxed">Démarrage à la date convenue, bâche au sol, chantier rangé chaque soir, voisinage prévenu.</p>
+      </div>
+      <div class="text-center reveal-stagger">
+        <div class="w-24 h-24 mx-auto mb-5 rounded-full flex items-center justify-center border-2 border-white/20 text-white relative" style="background: rgba(25,118,210,0.18);">
+          <i data-lucide="shield-check" class="w-10 h-10"></i>
+          <div class="absolute -top-2 -right-2 w-9 h-9 rounded-full bg-brand-500 text-white flex items-center justify-center text-base">4</div>
+        </div>
+        <div class="inline-block text-white text-[10px] font-bold px-3 py-1 rounded-full tracking-[0.22em] mb-3 font-mono" style="background: rgba(255,255,255,0.12);">GARANTIE</div>
+        <h3 class="text-white text-2xl mb-2 leading-none">Écrite, décennale</h3>
+        <p class="text-white/75 text-sm leading-relaxed">Réception en bonne et due forme, attestation décennale remise, suivi pendant 1 an.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GARANTIE ECRITE -->
+<section class="py-20 lg:py-28 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="rounded-3xl p-8 sm:p-12 lg:p-16 relative overflow-hidden border border-brand-100" style="background: linear-gradient(135deg, #FFF4EC 0%, #FFE3CC 100%);">
+      <div class="absolute -right-12 -top-12 w-72 h-72 rounded-full opacity-20" style="background: radial-gradient(circle, var(--brand) 0%, transparent 70%);"></div>
+      <div class="absolute -left-12 -bottom-12 w-64 h-64 rounded-full opacity-15" style="background: radial-gradient(circle, var(--azur) 0%, transparent 70%);"></div>
+
+      <div class="relative grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-3 flex justify-center reveal-left">
+          <div class="seal">
+            <div class="font-mono text-[9px] tracking-[0.3em] mb-1 opacity-90">GARANTIE</div>
+            <div class="text-6xl leading-none">10</div>
+            <div class="text-2xl leading-none mt-1">ANS</div>
+            <div class="font-mono text-[9px] tracking-[0.3em] mt-2 opacity-90">DÉCENNALE</div>
+          </div>
+        </div>
+        <div class="lg:col-span-9 reveal-right">
+          <div class="section-label">Garantie écrite</div>
+          <h2 class="text-ink-800 text-4xl sm:text-5xl lg:text-6xl leading-[0.95] mb-6">
+            Quand on signe,<br/>
+            <span class="text-gradient-logo">on s'engage à vie.</span>
+          </h2>
+          <p class="text-ink-700 text-base leading-relaxed mb-6 max-w-2xl">
+            Toute intervention de couverture ou d'étanchéité est <strong class="text-brand-700">couverte par la garantie décennale</strong>, conformément à la loi française. Vous recevez l'attestation d'assurance et le PV de réception en main propre, à la fin du chantier — pas dans 6 mois, pas par mail, en main propre.
+          </p>
+          <div class="grid sm:grid-cols-3 gap-4 mb-6">
+            <div class="flex items-center gap-3 bg-white rounded-xl p-4 border border-brand-100">
+              <i data-lucide="file-check-2" class="w-6 h-6 text-brand-600 flex-shrink-0"></i>
+              <span class="text-sm text-ink-700 font-medium">Attestation MAAF Pro</span>
+            </div>
+            <div class="flex items-center gap-3 bg-white rounded-xl p-4 border border-brand-100">
+              <i data-lucide="signature" class="w-6 h-6 text-brand-600 flex-shrink-0"></i>
+              <span class="text-sm text-ink-700 font-medium">PV de réception signé</span>
+            </div>
+            <div class="flex items-center gap-3 bg-white rounded-xl p-4 border border-brand-100">
+              <i data-lucide="phone-call" class="w-6 h-6 text-brand-600 flex-shrink-0"></i>
+              <span class="text-sm text-ink-700 font-medium">Suivi téléphonique 1 an</span>
+            </div>
+          </div>
+          <a href="a-propos.html#engagements" class="inline-flex items-center gap-2 font-mono text-xs font-bold uppercase tracking-[0.18em] text-brand-700 hover:text-brand-600 transition">Lire les engagements <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AVIS CLIENTS -->
+<section class="py-20 lg:py-28 bg-ink-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-14 reveal">
+      <div class="section-label justify-center">Avis clients</div>
+      <h2 class="text-ink-800 text-5xl sm:text-6xl mb-4 leading-[0.95]">Ce qu'ils en disent.</h2>
+      <p class="text-ink-600 max-w-2xl mx-auto font-serif-h italic text-lg">Trois clients girondins, trois chantiers, trois étoiles plein la grille.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="avis-card reveal-stagger">
+        <span class="quote-mark">&ldquo;</span>
+        <div class="flex gap-1 mb-4">
+          <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+        </div>
+        <p class="text-ink-700 text-sm leading-relaxed mb-5">Une fuite qui datait de deux ans, trois entreprises avant lui n'avaient rien trouvé. Lui : test fumigène, fuite localisée en 40 minutes, réparée le lendemain. Travail propre, prix tenu.</p>
+        <div class="flex items-center gap-3 pt-4 border-t border-ink-100">
+          <div class="w-11 h-11 rounded-full flex items-center justify-center text-white text-base" style="background: linear-gradient(135deg, var(--brand), var(--azur-700));">JMD</div>
+          <div>
+            <div class="text-lg text-ink-800 leading-none">Jean-Michel D.</div>
+            <div class="text-ink-500 text-xs mt-1 font-mono">Mérignac · Il y a 2 semaines</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="avis-card reveal-stagger">
+        <span class="quote-mark">&ldquo;</span>
+        <div class="flex gap-1 mb-4">
+          <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+        </div>
+        <p class="text-ink-700 text-sm leading-relaxed mb-5">Réfection complète de la toiture en tuile canal. Travail à l'ancienne, pas de précipitation, propreté du chantier irréprochable. Et il a refait le jardin dans la foulée — un seul interlocuteur, c'est précieux.</p>
+        <div class="flex items-center gap-3 pt-4 border-t border-ink-100">
+          <div class="w-11 h-11 rounded-full flex items-center justify-center text-white text-base" style="background: linear-gradient(135deg, var(--brand), var(--azur-700));">CM</div>
+          <div>
+            <div class="text-lg text-ink-800 leading-none">Catherine M.</div>
+            <div class="text-ink-500 text-xs mt-1 font-mono">Bordeaux Caudéran · Il y a 1 mois</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="avis-card reveal-stagger">
+        <span class="quote-mark">&ldquo;</span>
+        <div class="flex gap-1 mb-4">
+          <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+        </div>
+        <p class="text-ink-700 text-sm leading-relaxed mb-5">Étanchéité de ma toiture-terrasse au chalumeau. Devis très clair, intervention propre, garantie écrite remise en fin de chantier. Le métier dans les règles, comme on n'en voit plus souvent.</p>
+        <div class="flex items-center gap-3 pt-4 border-t border-ink-100">
+          <div class="w-11 h-11 rounded-full flex items-center justify-center text-white text-base" style="background: linear-gradient(135deg, var(--brand), var(--azur-700));">PL</div>
+          <div>
+            <div class="text-lg text-ink-800 leading-none">Patrick L.</div>
+            <div class="text-ink-500 text-xs mt-1 font-mono">Pessac · Il y a 3 semaines</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUES MARQUEE -->
+<section class="py-14 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-8 reveal">
+      <div class="text-[11px] font-bold uppercase tracking-[0.22em] text-ink-400 mb-2 font-mono">Matériaux & marques de confiance</div>
+      <p class="text-ink-500 text-sm">Nous travaillons exclusivement avec les fabricants de référence du marché français.</p>
+    </div>
+
+    <div class="partners-marquee">
+      <div class="partners-track">
+        <div class="partner-card"><span class="brand-wm brand-onduline">ONDULINE</span></div>
+        <div class="partner-card"><span class="brand-wm brand-iko">IKO</span></div>
+        <div class="partner-card"><span class="brand-wm brand-soprema">SOPREMA</span></div>
+        <div class="partner-card"><span class="brand-wm brand-velux">VELUX</span></div>
+        <div class="partner-card"><span class="brand-wm brand-imerys">IMERYS</span></div>
+        <div class="partner-card"><span class="brand-wm brand-sika">SIKA</span></div>
+        <div class="partner-card"><span class="brand-wm brand-knauf">KNAUF</span></div>
+        <div class="partner-card"><span class="brand-wm brand-honeywell">Honeywell</span></div>
+        <div class="partner-card"><span class="brand-wm brand-onduline">ONDULINE</span></div>
+        <div class="partner-card"><span class="brand-wm brand-iko">IKO</span></div>
+        <div class="partner-card"><span class="brand-wm brand-soprema">SOPREMA</span></div>
+        <div class="partner-card"><span class="brand-wm brand-velux">VELUX</span></div>
+        <div class="partner-card"><span class="brand-wm brand-imerys">IMERYS</span></div>
+        <div class="partner-card"><span class="brand-wm brand-sika">SIKA</span></div>
+        <div class="partner-card"><span class="brand-wm brand-knauf">KNAUF</span></div>
+        <div class="partner-card"><span class="brand-wm brand-honeywell">Honeywell</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BANDEAU URGENCE 24/7 -->
+<section class="py-16 relative overflow-hidden" style="background: linear-gradient(95deg, #A31D17 0%, #D7281F 50%, #E63946 100%);">
+  <div class="absolute inset-0 opacity-[0.06]" style="background-image: radial-gradient(circle at 1px 1px, white 1px, transparent 0); background-size: 28px 28px;"></div>
+
+  <svg class="absolute right-0 top-0 h-full opacity-15 pointer-events-none flame-pulse" viewBox="0 0 200 300" aria-hidden="true">
+    <path d="M100 20 C 50 80, 30 160, 100 220 C 170 160, 160 80, 130 20 C 130 60, 100 60, 100 20 Z M 100 180 C 70 220, 70 280, 100 295 C 130 280, 130 220, 100 180 Z" fill="white"/>
+  </svg>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      <div class="lg:col-span-7 reveal-left">
+        <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white/15 border border-white/30 text-white text-[11px] font-bold tracking-[0.22em] uppercase font-mono mb-5">
+          <i data-lucide="flame" class="w-4 h-4 flame-pulse"></i> Urgence toiture · 24h/24 — 7j/7
+        </div>
+        <h2 class="text-white text-5xl sm:text-6xl lg:text-7xl leading-[0.92] mb-4">
+          Fuite, infiltration,<br/>
+          tuile envolée ?
+        </h2>
+        <p class="text-white/95 text-lg leading-relaxed max-w-xl">
+          On répond la nuit, le week-end, les jours fériés. Une seule personne, un seul numéro — celle qui interviendra.
+        </p>
+      </div>
+      <div class="lg:col-span-5 reveal-right">
+        <a href="tel:0755796718" class="block bg-white rounded-2xl p-7 shadow-2xl hover:scale-[1.02] transition">
+          <div class="text-[10px] tracking-[0.25em] uppercase text-ember-700 font-mono font-bold mb-2">Appel direct artisan</div>
+          <div class="text-ember-700 text-4xl sm:text-5xl lg:text-6xl leading-none mb-3" style="font-family:'Bebas Neue',sans-serif;">07 55 79 67 18</div>
+          <div class="flex items-center gap-2 text-ink-600 text-sm">
+            <i data-lucide="phone-call" class="w-4 h-4 text-ember-600"></i>
+            <span>Réponse immédiate, intervention 1h en Métropole</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOC DEVIS -->
+<section id="devis" class="py-20 lg:py-28 bg-ink-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="relative rounded-3xl overflow-hidden" style="background: linear-gradient(135deg, var(--brand) 0%, var(--brand-600) 40%, var(--azur-700) 100%); box-shadow: 0 40px 80px -40px rgba(232,93,26,0.55);">
+      <div class="absolute inset-0 opacity-10" style="background: radial-gradient(circle at 80% 20%, rgba(255,255,255,0.5), transparent 40%);"></div>
+
+      <div class="relative grid grid-cols-1 lg:grid-cols-5 gap-0">
+        <div class="lg:col-span-2 relative min-h-[320px] lg:min-h-full">
+          <div class="w-full h-full absolute inset-0 overflow-hidden" style="border-radius:0;">
+  <img src="https://cdn.jsdelivr.net/gh/mouradlatreche44/batipro-image-library@main/09-artisan-team/about-artisan.jpg" alt="Artisan Medétanch en rendez-vous client à Bordeaux pour un devis gratuit" class="object-cover w-full h-full" loading="lazy" decoding="async" />
+</div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-3 p-8 sm:p-12 text-white relative z-10">
+          <div class="section-label light">Devis gratuit · Sans engagement</div>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl leading-tight mb-4 reveal">Parlons de votre toiture.</h2>
+          <p class="text-white/95 text-base mb-8 max-w-lg reveal">Décrivez votre besoin — je vous rappelle sous 24h ouvrées avec une première estimation et une date de visite.</p>
+
+          <form action="https://formsubmit.co/medetanch@gmail.com" method="POST" class="space-y-5 reveal">
+            <input type="hidden" name="_subject" value="Nouveau devis Medétanch — site web" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" value="https://medetanch-bordeaux.pages.dev/merci.html" />
+            <input type="hidden" name="_template" value="table" />
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="f-nom" class="form-label">Nom et prénom *</label>
+                <input id="f-nom" name="nom" type="text" placeholder="Ex : Jean Dupont" class="form-field" required />
+              </div>
+              <div>
+                <label for="f-tel" class="form-label">Téléphone *</label>
+                <input id="f-tel" name="telephone" type="tel" placeholder="07 55 79 67 18" class="form-field" required />
+              </div>
+            </div>
+            <div>
+              <label for="f-mail" class="form-label">Email *</label>
+              <input id="f-mail" name="email" type="email" placeholder="votre.email@exemple.fr" class="form-field" required />
+            </div>
+            <div>
+              <label for="f-msg" class="form-label">Décrivez votre besoin *</label>
+              <textarea id="f-msg" name="message" placeholder="Ex : recherche de fuite toiture-terrasse 80m² à Pessac, demande de devis pour réfection tuile canal..." rows="4" class="form-field resize-none" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-white">Envoyer la demande <i data-lucide="arrow-right" class="w-4 h-4"></i></button>
+
+            <p class="text-white/70 text-xs leading-relaxed mt-4">En envoyant ce formulaire, vous acceptez d'être recontacté par Medétanch concernant votre demande. Vos données ne sont jamais transmises à des tiers.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ZONE D'INTERVENTION -->
+<section class="py-20 lg:py-28 relative overflow-hidden bg-hero">
+  <div class="absolute inset-0 opacity-[0.06]" style="background-image: radial-gradient(circle at 1px 1px, white 1px, transparent 0); background-size: 28px 28px;"></div>
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+      <div class="text-white reveal-left">
+        <div class="section-label light">Zone d'intervention</div>
+        <h2 class="text-5xl sm:text-6xl leading-[0.95] mb-6">
+          Bordeaux Métropole<br/>
+          <span class="text-gradient-fire">& 100 km autour.</span>
+        </h2>
+        <p class="text-white/85 text-base leading-relaxed mb-8">Basé à Bordeaux 33000, j'interviens sur l'ensemble de la Gironde et jusqu'à 100 km autour — du Bassin d'Arcachon au Libournais, du Médoc aux Graves.</p>
+
+        <div class="grid grid-cols-2 gap-x-8 mb-8">
+          <div>
+            <div class="font-mono font-bold text-xs tracking-[0.22em] uppercase mb-3 text-brand-300">Métropole bordelaise</div>
+            <a href="contact.html" class="zone-item"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-300"></i> Bordeaux · Mérignac</a>
+            <a href="contact.html" class="zone-item"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-300"></i> Pessac · Talence</a>
+            <a href="contact.html" class="zone-item"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-300"></i> Bègles · Le Bouscat</a>
+            <a href="contact.html" class="zone-item"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-300"></i> Villenave-d'Ornon</a>
+            <a href="contact.html" class="zone-item"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-brand-300"></i> Cenon · Lormont · Floirac</a>
+          </div>
+          <div>
+            <div class="font-mono font-bold text-xs tracking-[0.22em] uppercase mb-3 text-azur-300">Gironde élargie</div>
+            <a href="contact.html" class="zone-item"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-azur-300"></i> Libourne · Saint-André</a>
+            <a href="contact.html" class="zone-item"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-azur-300"></i> Blaye · Bourg</a>
+            <a href="contact.html" class="zone-item"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-azur-300"></i> Arcachon · La Teste · Gujan</a>
+            <a href="contact.html" class="zone-item"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-azur-300"></i> Andernos · Lège-Cap-Ferret</a>
+            <a href="contact.html" class="zone-item"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-azur-300"></i> Langon · Cadillac · Créon</a>
+          </div>
+        </div>
+
+        <a href="tel:0755796718" class="btn btn-primary"><i data-lucide="phone" class="w-4 h-4"></i> 07 55 79 67 18</a>
+      </div>
+
+      <div class="relative reveal-right">
+        <div class="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border border-white/10 bg-ink-900">
+          <iframe
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-0.7792%2C44.7378%2C-0.3792%2C44.9378&amp;layer=mapnik&amp;marker=44.8378%2C-0.5792"
+            width="100%" height="100%" style="border:0; display:block; filter: saturate(0.85);"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="Zone d'intervention Medétanch — Bordeaux Métropole et Gironde"></iframe>
+        </div>
+        <div class="mt-3 text-xs text-white/60 text-center">
+          <a href="https://www.openstreetmap.org/?mlat=44.8378&amp;mlon=-0.5792#map=11/44.8378/-0.5792" target="_blank" rel="noopener" class="hover:text-brand-300">Voir en grand — OpenStreetMap</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-ink-900 text-white py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+      <div class="md:col-span-2">
+        <img src="assets/img/logo-medetanch.png" alt="Medétanch" class="h-12 md:h-14 w-auto mb-6 brightness-110" />
+        <p class="text-white/60 text-sm leading-relaxed max-w-md mb-5">
+          Couvreur, étancheur et paysagiste à Bordeaux. Artisan seul, intervention 100 km autour, astreinte 24/7. Devis gratuit sous 48h, garantie décennale.
+        </p>
+        <div class="flex items-center gap-3">
+          <a href="#" aria-label="Facebook" class="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition text-white">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M13.5 21v-7.5h2.53l.38-2.94H13.5V8.67c0-.85.24-1.43 1.46-1.43h1.56V4.61c-.27-.04-1.19-.12-2.27-.12-2.25 0-3.79 1.37-3.79 3.89v2.17H8v2.94h2.46V21h3.04z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram" class="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition text-white">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" aria-label="Google Avis" class="w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition text-white">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M21.35 11.1H12v3.2h5.35c-.23 1.4-1.7 4.1-5.35 4.1-3.22 0-5.85-2.67-5.85-5.95S8.78 6.5 12 6.5c1.83 0 3.06.78 3.77 1.45l2.57-2.47C16.78 3.93 14.6 3 12 3 6.98 3 2.95 7.03 2.95 12S6.98 21 12 21c6.93 0 9.2-4.85 9.2-7.34 0-.49-.05-.88-.12-1.26z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div>
+        <div class="text-brand-300 text-lg uppercase tracking-widest mb-4" style="font-family:'Bebas Neue',sans-serif;">Contact</div>
+        <div class="space-y-3 text-sm text-white/75">
+          <a href="tel:0755796718" class="flex items-center gap-3 hover:text-white"><i data-lucide="phone" class="w-4 h-4 text-brand-400"></i> 07 55 79 67 18</a>
+          <a href="mailto:medetanch@gmail.com" class="flex items-center gap-3 hover:text-white"><i data-lucide="mail" class="w-4 h-4 text-brand-400"></i> medetanch@gmail.com</a>
+          <div class="flex items-center gap-3"><i data-lucide="map-pin" class="w-4 h-4 text-brand-400"></i> Bordeaux 33000 · Gironde</div>
+          <div class="flex items-center gap-3"><i data-lucide="alarm-clock" class="w-4 h-4 text-ember-400"></i> Astreinte 24/7</div>
+        </div>
+      </div>
+      <div>
+        <div class="text-azur-300 text-lg uppercase tracking-widest mb-4" style="font-family:'Bebas Neue',sans-serif;">Métiers</div>
+        <div class="space-y-2 text-sm text-white/75">
+          <a href="couverture.html" class="block hover:text-white">Couverture & toiture</a>
+          <a href="etancheite.html" class="block hover:text-white">Étanchéité toiture-terrasse</a>
+          <a href="paysage.html" class="block hover:text-white">Paysage & extérieur</a>
+          <a href="a-propos.html" class="block hover:text-white">À propos</a>
+          <a href="contact.html" class="block hover:text-white">Contact & devis</a>
+        </div>
+      </div>
+    </div>
+    <div class="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/50">
+      <div>© 2026 Medétanch · Tous droits réservés</div>
+      <div class="flex items-center gap-6">
+        <a href="mentions-legales.html" class="hover:text-white">Mentions légales</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING CTA -->
+<a href="tel:0755796718" class="fixed bottom-6 right-6 z-40 float-cta w-16 h-16 rounded-full text-white flex items-center justify-center shadow-2xl" style="background: linear-gradient(135deg, var(--brand), var(--brand-600));" aria-label="Appeler Medétanch">
+  <i data-lucide="phone" class="w-7 h-7"></i>
+</a>
+
+<script>
+  lucide.createIcons();
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), e.target.classList.contains('reveal-stagger') ? (i % 4) * 80 : 0);
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-stagger').forEach(el => io.observe(el));
+
+  const counterIO = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      const el = e.target;
+      const end = parseFloat(el.dataset.counter);
+      const dur = parseInt(el.dataset.counterDuration) || 1400;
+      const suffix = el.dataset.counterSuffix || '';
+      const start = performance.now();
+      const tick = (t) => {
+        const p = Math.min(1, (t - start) / dur);
+        const eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.round(end * eased) + suffix;
+        if (p < 1) requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+      counterIO.unobserve(el);
+    });
+  }, { threshold: 0.5 });
+  document.querySelectorAll('[data-counter]').forEach(el => counterIO.observe(el));
+
+  const burger = document.getElementById('burger-btn');
+  const burgerIcon = document.getElementById('burger-icon');
+  const closeIcon = document.getElementById('close-icon');
+  const mobileMenu = document.getElementById('mobile-menu');
+  burger?.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    burgerIcon.classList.toggle('hidden');
+    closeIcon.classList.toggle('hidden');
+  });
+
+  const baSlider = document.getElementById('ba-slider');
+  const baBefore = baSlider?.querySelector('.ba-before');
+  const baHandle = document.getElementById('ba-handle');
+  if (baSlider && baHandle) {
+    let dragging = false;
+    const setPos = (x) => {
+      const rect = baSlider.getBoundingClientRect();
+      const pct = Math.max(0, Math.min(100, ((x - rect.left) / rect.width) * 100));
+      baBefore.style.clipPath = `inset(0 ${100-pct}% 0 0)`;
+      baHandle.style.left = `${pct}%`;
+    };
+    const onDown = (e) => { dragging = true; e.preventDefault(); };
+    const onUp = () => { dragging = false; };
+    const onMove = (e) => {
+      if (!dragging) return;
+      const x = e.touches ? e.touches[0].clientX : e.clientX;
+      setPos(x);
+    };
+    baHandle.addEventListener('mousedown', onDown);
+    baHandle.addEventListener('touchstart', onDown, { passive: false });
+    window.addEventListener('mouseup', onUp);
+    window.addEventListener('touchend', onUp);
+    window.addEventListener('mousemove', onMove);
+    window.addEventListener('touchmove', onMove, { passive: true });
+    baSlider.addEventListener('click', (e) => {
+      if (e.target === baHandle || baHandle.contains(e.target)) return;
+      setPos(e.clientX);
+    });
+  }
+</script>
+</body>
+</html>

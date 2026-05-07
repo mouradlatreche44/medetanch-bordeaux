@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Merci — Medétanch · Demande bien envoyée</title>
+  <meta name="description" content="Votre demande a bien été envoyée à Medétanch. Nous revenons vers vous sous 24h ouvrées." />
+  <meta name="robots" content="noindex, follow" />
+  <link rel="canonical" href="https://medetanch-bordeaux.pages.dev/merci.html" />
+  <meta name="theme-color" content="#E85D1A" />
+
+  <link rel="icon" type="image/png" href="assets/img/logo-medetanch.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { display: ['Bebas Neue', 'sans-serif'], serif: ['Playfair Display', 'serif'], body: ['Inter', 'sans-serif'], mono: ['JetBrains Mono', 'monospace'] },
+          colors: {
+            brand: { 50:'#FFF4EC',100:'#FFE3CC',200:'#FFC79A',300:'#FFA361',400:'#FA822F',500:'#E85D1A',600:'#C9460E',700:'#A53707',800:'#7E2A05',900:'#5C1F04',950:'#311002' },
+            azur:  { 50:'#EAF4FF',100:'#CFE4FF',200:'#A0CAFF',300:'#6DAEFF',400:'#3F90F0',500:'#1976D2',600:'#0E5CAB',700:'#0E4D8A',800:'#0B3B6B',900:'#082A4D',950:'#04162A' },
+            ember: { 400:'#F35A4D',500:'#E63946',600:'#D7281F',700:'#A31D17' },
+            ink:   { 50:'#FAF7F4',100:'#F1EBE4',200:'#DDD2C5',300:'#B8A793',400:'#8B7866',500:'#5E4F40',600:'#3F342A',700:'#2A2218',800:'#1A140D',900:'#0E0A06' },
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/medetanch.css" />
+
+  <style>
+    .check-circle {
+      width: 140px; height: 140px; border-radius: 50%;
+      background: linear-gradient(135deg, #2BA84A 0%, #198F36 100%);
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 32px;
+      box-shadow: 0 24px 60px -16px rgba(43,168,74,0.55), inset 0 0 0 8px rgba(255,255,255,0.18);
+      position: relative;
+      animation: check-pop 0.6s cubic-bezier(.16,1.5,.3,1) forwards;
+    }
+    @keyframes check-pop {
+      0%   { transform: scale(0.4); opacity: 0; }
+      70%  { transform: scale(1.08); }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    .check-circle::before {
+      content: ''; position: absolute; inset: -10px; border-radius: 50%;
+      border: 2px dashed rgba(43,168,74,0.35);
+      animation: seal-spin 28s linear infinite;
+    }
+    .check-icon { animation: check-draw 0.5s ease-out 0.4s forwards; opacity: 0; transform: scale(0.5); }
+    @keyframes check-draw { to { opacity: 1; transform: scale(1); } }
+  </style>
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Merci — Demande envoyée | Medétanch" />
+  <meta name="twitter:description" content="Merci, votre demande a bien été envoyée. Nous revenons vers vous sous 24h ouvrées." />
+  <meta name="twitter:image" content="https://medetanch-bordeaux.pages.dev/assets/img/logo-medetanch.png" />
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar hidden md:block">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-9">
+    <span class="uppercase tracking-widest text-[11px]">Couvreur · Étanchéité · Paysage — Bordeaux Métropole & Gironde · Astreinte 24/7</span>
+    <div class="flex items-center gap-6 text-[11px]">
+      <a href="tel:0755796718" class="flex items-center gap-2 hover:text-white transition"><i data-lucide="phone" class="w-3 h-3"></i> 07 55 79 67 18</a>
+      <a href="mailto:medetanch@gmail.com" class="flex items-center gap-2 hover:text-white transition"><i data-lucide="mail" class="w-3 h-3"></i> medetanch@gmail.com</a>
+    </div>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-ink-100 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-20">
+      <a href="index.html" class="flex items-center gap-2" aria-label="Medétanch — Accueil">
+        <img src="assets/img/logo-medetanch.png" alt="Medétanch" class="h-14 md:h-16 w-auto logo-navbar" />
+      </a>
+      <div class="hidden lg:flex items-center gap-9">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="couverture.html" class="nav-link">Couverture</a>
+        <a href="etancheite.html" class="nav-link">Étanchéité</a>
+        <a href="paysage.html" class="nav-link">Paysage</a>
+        <a href="a-propos.html" class="nav-link">À propos</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="tel:0755796718" class="hidden sm:inline-flex btn btn-primary"><i data-lucide="phone" class="w-4 h-4"></i> 07 55 79 67 18</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO MERCI -->
+<section class="relative overflow-hidden bg-hero min-h-[80vh] flex items-center">
+  <div class="absolute inset-0 opacity-[0.06]" style="background-image: radial-gradient(circle at 1px 1px, white 1px, transparent 0); background-size: 32px 32px;"></div>
+
+  <div class="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28 text-center">
+    <div class="check-circle">
+      <i data-lucide="check" class="w-20 h-20 text-white check-icon" stroke-width="3"></i>
+    </div>
+
+    <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full backdrop-blur-md bg-white/10 border border-white/20 text-white text-[11px] font-bold tracking-[0.22em] uppercase font-mono mb-6">
+      <i data-lucide="mail-check" class="w-4 h-4 text-brand-300"></i>
+      Demande bien reçue
+    </div>
+
+    <h1 class="text-white text-6xl sm:text-7xl lg:text-8xl leading-[0.92] mb-6">
+      Merci !<br/>
+      <span class="font-serif-h text-4xl sm:text-5xl lg:text-6xl italic font-normal text-white/95">Votre demande</span><br/>
+      <span class="text-gradient-fire">a bien été envoyée.</span>
+    </h1>
+
+    <p class="text-white/85 text-lg sm:text-xl font-light mb-10 leading-relaxed max-w-xl mx-auto">
+      Je reviens vers vous <strong class="text-white">sous 24h ouvrées</strong> pour fixer une visite et établir votre devis détaillé. En cas d'urgence, n'hésitez pas à appeler directement.
+    </p>
+
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
+      <a href="index.html" class="btn btn-primary"><i data-lucide="home" class="w-4 h-4"></i> Retour accueil</a>
+      <a href="couverture.html" class="btn btn-outline-light">Voir nos métiers <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-2xl mx-auto">
+      <a href="tel:0755796718" class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-5 hover:bg-white/15 transition group">
+        <i data-lucide="phone" class="w-6 h-6 text-brand-300 mx-auto mb-3 group-hover:scale-110 transition"></i>
+        <div class="text-[10px] tracking-[0.2em] uppercase text-white/60 font-mono mb-1">Téléphone</div>
+        <div class="text-white text-lg leading-none" style="font-family:'Bebas Neue',sans-serif;">07 55 79 67 18</div>
+      </a>
+      <a href="mailto:medetanch@gmail.com" class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-5 hover:bg-white/15 transition group">
+        <i data-lucide="mail" class="w-6 h-6 text-brand-300 mx-auto mb-3 group-hover:scale-110 transition"></i>
+        <div class="text-[10px] tracking-[0.2em] uppercase text-white/60 font-mono mb-1">Email</div>
+        <div class="text-white text-sm leading-none break-all" style="font-family:'Bebas Neue',sans-serif;">medetanch@gmail.com</div>
+      </a>
+      <div class="bg-ember-700/40 backdrop-blur-md border border-ember-500/40 rounded-xl p-5">
+        <i data-lucide="alarm-clock" class="w-6 h-6 text-ember-400 mx-auto mb-3 flame-pulse"></i>
+        <div class="text-[10px] tracking-[0.2em] uppercase text-white/70 font-mono mb-1">Urgence 24/7</div>
+        <div class="text-white text-lg leading-none" style="font-family:'Bebas Neue',sans-serif;">Astreinte active</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER simplifié -->
+<footer class="bg-ink-900 text-white py-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-6">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="assets/img/logo-medetanch.png" alt="Medétanch" class="h-10 w-auto brightness-110" />
+      </a>
+      <div class="flex items-center gap-6 text-sm text-white/70">
+        <a href="index.html" class="hover:text-white">Accueil</a>
+        <a href="couverture.html" class="hover:text-white">Couverture</a>
+        <a href="etancheite.html" class="hover:text-white">Étanchéité</a>
+        <a href="paysage.html" class="hover:text-white">Paysage</a>
+        <a href="contact.html" class="hover:text-white">Contact</a>
+        <a href="mentions-legales.html" class="hover:text-white">Mentions légales</a>
+      </div>
+      <div class="text-xs text-white/50">© 2026 Medétanch</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  lucide.createIcons();
+</script>
+</body>
+</html>

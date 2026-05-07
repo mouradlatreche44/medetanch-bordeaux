@@ -1,0 +1,899 @@
+/* ======================= GLOBAL ======================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ======================= NAVBAR DROPDOWN ======================= */
+.nav-dropdown { position: relative; }
+.nav-dropdown-btn { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; background: none; border: none; font: inherit; color: inherit; }
+.nav-dropdown-btn i[data-lucide="chevron-down"] { transition: transform 0.2s ease; }
+.nav-dropdown:hover .nav-dropdown-btn i[data-lucide="chevron-down"] { transform: rotate(180deg); }
+.nav-dropdown::after { content: ''; position: absolute; left: 0; right: 0; top: 100%; height: 18px; }
+.nav-dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(8px);
+    margin-top: 14px;
+    width: 280px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 25px 60px -20px rgba(15, 23, 42, 0.22), 0 0 0 1px rgba(15, 23, 42, 0.06);
+    padding: 10px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.22s ease, transform 0.22s ease;
+    z-index: 60;
+}
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown:focus-within .nav-dropdown-menu {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+    pointer-events: auto;
+}
+.nav-dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 14px;
+    border-radius: 10px;
+    color: #1e293b;
+    font-size: 13px;
+    font-weight: 600;
+    transition: background 0.15s ease, color 0.15s ease;
+    text-decoration: none;
+}
+.nav-dropdown-item:hover { background: #eff6ff; color: #15803d; }
+.nav-dropdown-item-icon {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background: #eff6ff;
+    color: #22c55e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-dropdown-item:hover .nav-dropdown-item-icon { background: #22c55e; color: #ffffff; }
+
+/* Mobile : dropdowns deviennent des accordéons repliables */
+.mobile-nav-group { border-radius: 10px; overflow: hidden; display: block !important; }
+.mobile-nav-group-title {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 12px 16px;
+    background: none;
+    border: none;
+    font: inherit;
+    color: #334155;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.mobile-nav-group-title i { transition: transform 0.2s ease; }
+.mobile-nav-group.open .mobile-nav-group-title i { transform: rotate(180deg); }
+.mobile-nav-group-items { display: none !important; padding: 4px 0 8px 16px; }
+.mobile-nav-group.open .mobile-nav-group-items { display: block !important; }
+.mobile-nav-group-items a {
+    display: block !important;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    color: #475569;
+    font-weight: 500;
+    text-decoration: none;
+}
+.mobile-nav-group-items a:hover { background: #eff6ff; color: #15803d; }
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+    background: #15803d;
+    color: white;
+}
+
+/* ======================= NAVBAR ======================= */
+#navbar {
+    background: #ffffff;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+#navbar.scrolled {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.04);
+}
+
+/* Links du menu : toujours navy foncé, accent bleu au hover */
+.nav-link {
+    color: #15803d;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+.nav-link:hover {
+    color: #22c55e;
+}
+.burger-line { background: #15803d; }
+
+/* ======================= GLASS BADGES ======================= */
+.glass-badge {
+    transition: all 0.3s ease;
+}
+
+.glass-badge:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* ======================= HERO PARTICLES ======================= */
+#particles .particle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: rgba(34, 197, 94, 0.35);
+    border-radius: 50%;
+    animation: float-particle linear infinite;
+}
+
+@keyframes float-particle {
+    0% { transform: translateY(100vh) scale(0); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { transform: translateY(-10vh) scale(1); opacity: 0; }
+}
+
+/* ======================= MAGNETIC CARDS ======================= */
+.magnetic-card {
+    transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.4s ease;
+}
+
+.magnetic-card:hover {
+    box-shadow: 0 25px 60px rgba(21, 128, 61, 0.12);
+}
+
+/* ======================= BENTO CARDS ======================= */
+.bento-card {
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.bento-card:hover {
+    transform: translateY(-6px);
+}
+
+/* ======================= GALLERY ======================= */
+.gallery-item {
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.gallery-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 60px rgba(21, 128, 61, 0.18);
+}
+
+/* ======================= TARIF CARDS ======================= */
+.tarif-card {
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* ======================= BEFORE / AFTER SLIDER ======================= */
+.ba-slider {
+    position: relative;
+    overflow: hidden;
+    cursor: col-resize;
+    -webkit-user-select: none;
+    user-select: none;
+    touch-action: none;
+}
+
+.ba-slider .ba-after {
+    position: absolute;
+    inset: 0;
+}
+
+.ba-slider .ba-after img,
+.ba-slider .ba-before img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ba-slider .ba-before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+    width: 50%;
+    height: 100%;
+}
+
+.ba-slider .ba-before img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ba-slider .ba-handle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: white;
+    z-index: 3;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.ba-slider .ba-handle-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+}
+
+.ba-slider .ba-label {
+    position: absolute;
+    bottom: 20px;
+    padding: 6px 16px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    z-index: 2;
+    pointer-events: none;
+    backdrop-filter: blur(4px);
+}
+
+.ba-label-before {
+    left: 16px;
+    background: rgba(21, 128, 61, 0.85);
+    color: white;
+}
+
+.ba-label-after {
+    right: 16px;
+    background: rgba(34, 197, 94, 0.9);
+    color: white;
+}
+
+/* ======================= DIAGNOSTIC OPTIONS ======================= */
+.diag-option.selected {
+    border-color: #22c55e !important;
+    background: #f0fdf4 !important;
+    box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.15);
+}
+
+/* ======================= STICKY CTA ======================= */
+.sticky-cta-pulse {
+    animation: ctaPulse 3s ease-in-out infinite;
+}
+
+@keyframes ctaPulse {
+    0%, 100% { box-shadow: 0 10px 40px rgba(34, 197, 94, 0.35); }
+    50% { box-shadow: 0 10px 60px rgba(34, 197, 94, 0.55); }
+}
+
+.pb-safe {
+    padding-bottom: max(16px, env(safe-area-inset-bottom));
+}
+
+/* ======================= REVIEW DOTS ======================= */
+.review-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #d1d5db;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.review-dot.active {
+    background: #22c55e;
+    width: 24px;
+    border-radius: 4px;
+}
+
+/* ======================= MOBILE MENU ======================= */
+#mobile-menu {
+    background-color: #fdfbf7;
+}
+
+#navbar.menu-open {
+    background: #fdfbf7 !important;
+    border-bottom: 1px solid #e5e2dc;
+}
+#navbar.menu-open .logo-text { color: #15803d !important; }
+#navbar.menu-open .logo-text span { color: #22c55e !important; }
+#navbar.menu-open .logo-sub { color: #94a3b8 !important; }
+#navbar.menu-open .burger-line { background: #15803d !important; }
+
+/* ======================= SCROLLBAR ======================= */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+/* ======================= FOOTER ======================= */
+footer {
+    position: relative;
+    z-index: 1;
+}
+
+/* ======================= REVIEW FLOATING CARDS ======================= */
+.review-float {
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease;
+}
+.review-float:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 25px 50px -12px rgba(21, 128, 61, 0.35);
+}
+/* Subtle curved accent band inside each card (bottom-left) */
+.review-float::before {
+    content: "";
+    position: absolute;
+    left: -40%;
+    bottom: -55%;
+    width: 180%;
+    height: 120%;
+    background: linear-gradient(135deg, transparent 45%, rgba(34, 197, 94, 0.07) 55%, transparent 75%);
+    transform: rotate(-8deg);
+    pointer-events: none;
+    z-index: 0;
+}
+/* Large orange quote mark in top-right, partially outside card */
+.review-quote-mark {
+    position: absolute;
+    top: -8px;
+    right: 14px;
+    font-family: "Baloo 2", "Nunito", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 4.5rem;
+    line-height: 1;
+    color: #22c55e;
+    letter-spacing: -0.08em;
+    pointer-events: none;
+    z-index: 2;
+    text-shadow: 0 2px 10px rgba(34, 197, 94, 0.25);
+}
+.review-quote-mark::after {
+    content: "\201D";
+    margin-left: -0.15em;
+}
+
+/* ======================= RESPONSIVE ======================= */
+@media (max-width: 640px) {
+    #hero h1 { font-size: 2.25rem; }
+    .tarif-card.md\:scale-105 { transform: scale(1); }
+    .review-card { width: 300px !important; }
+    .ba-slider { height: 300px !important; }
+    .review-quote-mark { font-size: 3.5rem; top: -4px; }
+}
+
+/* ======================= FEATURE CAROUSEL ======================= */
+.carousel-label {
+    background: transparent;
+    cursor: pointer;
+}
+
+.carousel-label:hover {
+    background: rgba(34, 197, 94, 0.05);
+}
+
+.carousel-label.active {
+    background: rgba(34, 197, 94, 0.08);
+    border-color: #22c55e;
+}
+
+.carousel-slide {
+    pointer-events: none;
+}
+
+.carousel-slide:first-child {
+    pointer-events: auto;
+}
+
+/* ======================= COUNTER ======================= */
+.count-up {
+    display: inline-block;
+}
+
+/* ======================= 21st.dev — TEXT SHIMMER ======================= */
+.text-shimmer {
+    background: linear-gradient(110deg, #ffffff 40%, #86efac 50%, #ffffff 60%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: shimmer 3s linear infinite;
+}
+@keyframes shimmer {
+    0%   { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+/* Shimmer variant orange on navy */
+.text-shimmer-orange {
+    background: linear-gradient(110deg, #22c55e 40%, #86efac 50%, #22c55e 60%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: shimmer 3s linear infinite;
+}
+
+/* ======================= 21st.dev — GRADIENT MESH ======================= */
+.gradient-mesh {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+        radial-gradient(at 20% 30%, rgba(21, 128, 61, 0.55) 0px, transparent 50%),
+        radial-gradient(at 80% 20%, rgba(22, 101, 52, 0.45) 0px, transparent 50%),
+        radial-gradient(at 40% 80%, rgba(21, 128, 61, 0.55) 0px, transparent 50%),
+        radial-gradient(at 70% 70%, rgba(34, 197, 94, 0.18) 0px, transparent 55%);
+    filter: blur(60px);
+    animation: mesh-drift 20s ease-in-out infinite;
+    mix-blend-mode: screen;
+    z-index: 1;
+}
+@keyframes mesh-drift {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    33%      { transform: translate(-20px, 20px) scale(1.05); }
+    66%      { transform: translate(20px, -20px) scale(0.95); }
+}
+
+/* ======================= 21st.dev — GLOW CARD ======================= */
+.glow-card {
+    position: relative;
+    isolation: isolate;
+    background: #ffffff;
+    border: 1px solid #f1f5f9;
+    transition: transform 0.35s cubic-bezier(0.23,1,0.32,1), box-shadow 0.35s ease;
+}
+.glow-card::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    z-index: -1;
+    background: linear-gradient(135deg, #22c55e, #4ade80, #15803d);
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+.glow-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 30px 60px -20px rgba(34, 197, 94, 0.28);
+}
+.glow-card:hover::before {
+    opacity: 1;
+}
+
+/* ======================= 21st.dev — MARQUEE ======================= */
+.marquee {
+    overflow: hidden;
+    mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
+}
+.marquee .marquee-track {
+    display: flex;
+    gap: 3rem;
+    animation: marquee 30s linear infinite;
+    width: max-content;
+    align-items: center;
+}
+@keyframes marquee {
+    to { transform: translateX(-50%); }
+}
+
+/* ======================= 21st.dev — MAGNETIC BUTTONS ======================= */
+.btn-magnetic {
+    transition: transform 0.25s cubic-bezier(0.23,1,0.32,1), background 0.25s ease, box-shadow 0.25s ease;
+    will-change: transform;
+}
+
+/* ======================= 21st.dev — STAGGER REVEAL ======================= */
+.reveal-stagger { opacity: 0; transform: translateY(24px); transition: opacity 0.6s cubic-bezier(0.16,1,0.3,1), transform 0.6s cubic-bezier(0.16,1,0.3,1); }
+.reveal-stagger.visible { opacity: 1; transform: translateY(0); }
+
+/* ======================= NUMBERED CARD WATERMARK ======================= */
+.num-watermark {
+    position: absolute;
+    bottom: -10px;
+    right: 8px;
+    font-family: 'Baloo 2', 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 6rem;
+    line-height: 1;
+    color: rgba(21, 128, 61, 0.06);
+    pointer-events: none;
+    user-select: none;
+    letter-spacing: -0.04em;
+}
+.service-card-v2 {
+    position: relative;
+    overflow: hidden;
+}
+.service-card-v2.cta-card .num-watermark {
+    color: rgba(255, 255, 255, 0.18);
+}
+
+/* ======================= PROCESS DOTTED LINE ======================= */
+.process-line-dots {
+    background-image: radial-gradient(circle, rgba(249, 115, 22, 0.55) 2px, transparent 2px);
+    background-size: 14px 2px;
+    background-repeat: repeat-x;
+    background-position: 0 50%;
+}
+/* Cercle orange-ring pour "Comment ça marche" — touche chaleureuse sur navy */
+.process-circle-orange {
+    background: #15803d !important;
+    border: 3px solid #f97316;
+    box-shadow: 0 0 0 6px rgba(249, 115, 22, 0.12), 0 10px 30px -8px rgba(249, 115, 22, 0.35);
+}
+
+/* Réseaux sociaux pack (footer) */
+.social-icon-big {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.25s ease;
+    box-shadow: 0 4px 14px -4px rgba(0, 0, 0, 0.35);
+}
+.social-icon-big:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 10px 25px -6px rgba(0, 0, 0, 0.5);
+}
+
+/* Photo footer — élément décoratif flottant en bas-droite de la col 1 */
+.footer-plumber-wrap {
+    position: absolute;
+    right: -40px;
+    bottom: -32px;
+    width: 420px;
+    max-width: 55%;
+    pointer-events: none;
+    z-index: 1;
+}
+.footer-plumber {
+    position: relative;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    opacity: 0.98;
+    filter: drop-shadow(0 25px 50px rgba(0, 0, 0, 0.55));
+    display: block;
+}
+/* Badge devis vert — CTA mis en avant */
+.footer-urgence-badge {
+    position: absolute;
+    left: -40px;
+    bottom: 40px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 20px;
+    background: #f97316;
+    color: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 18px 40px -12px rgba(249, 115, 22, 0.55), 0 0 0 4px rgba(249, 115, 22, 0.18);
+    pointer-events: auto;
+    max-width: 240px;
+}
+.footer-urgence-icon {
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.18);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-urgence-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.15;
+}
+.footer-urgence-title {
+    font-family: 'Baloo 2', 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 0.95rem;
+    color: #ffffff;
+}
+.footer-urgence-sub {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.92);
+    margin-top: 2px;
+}
+
+/* ======================= BRAND TEXT LOGOS (Atlantic, Roca, Pacific) ======================= */
+.brand-logo.brand-text {
+    font-family: 'Baloo 2', 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 1.75rem;
+    letter-spacing: -0.02em;
+    color: #15803d;
+    text-transform: uppercase;
+    padding: 0 0.5rem;
+    white-space: nowrap;
+    position: relative;
+    line-height: 1;
+    font-feature-settings: "kern" 1, "liga" 1;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.brand-logo.brand-text::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -8px;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 2px;
+    background: #22c55e;
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity 0.3s ease, width 0.3s ease;
+}
+.brand-logo.brand-text:hover {
+    color: #15803d;
+    transform: translateY(-2px);
+}
+.brand-logo.brand-text:hover::after {
+    opacity: 1;
+    width: 36px;
+}
+
+/* ======================= ICON BOUNCE ON SERVICE CARD HOVER ======================= */
+.service-card-v2 .icon-wrap {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+    color: #16a34a;
+    margin-bottom: 1.25rem;
+    transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+.service-card-v2:hover .icon-wrap {
+    transform: translateY(-3px) rotate(-6deg) scale(1.08);
+    background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+    color: #ffffff;
+    box-shadow: 0 12px 28px -8px rgba(34, 197, 94, 0.5);
+}
+.service-card-v2:hover .num-watermark {
+    color: rgba(34, 197, 94, 0.14);
+    transition: color 0.4s ease;
+}
+
+/* ======================= CTA ARROW SLIDE ======================= */
+.cta-arrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: transform 0.3s cubic-bezier(0.23,1,0.32,1);
+}
+.cta-arrow .arrow-icon {
+    transition: transform 0.3s cubic-bezier(0.23,1,0.32,1);
+    display: inline-block;
+}
+.cta-arrow:hover .arrow-icon,
+a:hover > .cta-arrow .arrow-icon,
+button:hover .cta-arrow .arrow-icon {
+    transform: translateX(4px);
+}
+
+/* Apply to all btn-navy and btn-accent that contain an arrow */
+.btn-navy, .btn-accent, .btn-ghost {
+    position: relative;
+    overflow: hidden;
+}
+.btn-navy > i[data-lucide="arrow-right"],
+.btn-accent > i[data-lucide="arrow-right"],
+.btn-ghost > i[data-lucide="arrow-right"],
+.btn-navy > i[data-lucide="chevron-right"],
+.btn-accent > i[data-lucide="chevron-right"] {
+    transition: transform 0.3s cubic-bezier(0.23,1,0.32,1);
+}
+.btn-navy:hover > i[data-lucide="arrow-right"],
+.btn-accent:hover > i[data-lucide="arrow-right"],
+.btn-ghost:hover > i[data-lucide="arrow-right"],
+.btn-navy:hover > i[data-lucide="chevron-right"],
+.btn-accent:hover > i[data-lucide="chevron-right"] {
+    transform: translateX(5px);
+}
+
+/* ======================= BUTTON RIPPLE / SHINE SWEEP ======================= */
+.btn-accent::before,
+.btn-navy::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.25), transparent);
+    transition: left 0.7s cubic-bezier(0.23,1,0.32,1);
+    pointer-events: none;
+}
+.btn-accent:hover::before,
+.btn-navy:hover::before {
+    left: 100%;
+}
+
+/* ======================= COUNTER PULSE ON ACTIVATION ======================= */
+[data-counter].counter-done {
+    animation: counterPulse 0.6s ease-out;
+}
+@keyframes counterPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.06); }
+    100% { transform: scale(1); }
+}
+
+/* ======================= QUICK-CARD subtle float ======================= */
+.quick-card {
+    transition: transform 0.4s cubic-bezier(0.23,1,0.32,1), box-shadow 0.4s ease;
+}
+.quick-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px -12px rgba(21, 128, 61, 0.15);
+}
+
+/* ======================= PROCESS CIRCLE — ROTATING RING ======================= */
+.process-circle {
+    position: relative;
+}
+.process-circle::before {
+    content: "";
+    position: absolute;
+    inset: -6px;
+    border-radius: 50%;
+    border: 2px dashed rgba(34, 197, 94, 0.35);
+    animation: rotate-ring 20s linear infinite;
+    pointer-events: none;
+}
+@keyframes rotate-ring {
+    to { transform: rotate(360deg); }
+}
+
+/* ======================= SECTION-LABEL dot PULSE ======================= */
+.section-label > span:first-child {
+    animation: dot-pulse 2.5s ease-in-out infinite;
+}
+@keyframes dot-pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.6; transform: scale(1.35); }
+}
+
+/* ======================= IMG zoom on card hover ======================= */
+.img-zoom-wrap {
+    overflow: hidden;
+    border-radius: inherit;
+}
+.img-zoom-wrap img {
+    transition: transform 0.7s cubic-bezier(0.23,1,0.32,1);
+}
+.img-zoom-wrap:hover img {
+    transform: scale(1.05);
+}
+
+/* ======================= NUM WATERMARK reveal on card intersection ======================= */
+.service-card-v2 .num-watermark {
+    transform: translateY(20px);
+    opacity: 0;
+    transition: transform 0.8s cubic-bezier(0.16,1,0.3,1), opacity 0.8s ease;
+}
+.service-card-v2.reveal-stagger.visible .num-watermark {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* ======================= Reduced motion safety ======================= */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* ======================= CONTRASTE — WCAG AA ======================= */
+
+/* Renforcer la lisibilité du texte "ink-500" sur fonds clairs (ink-50) */
+.bg-ink-50 .text-ink-500,
+.bg-white .text-ink-500 {
+    color: #475569; /* slate-600 au lieu de slate-500 */
+}
+
+/* Placeholders dans les formulaires orange/teal clair → blanc plus marqué */
+.bg-accent-500 input::placeholder,
+.bg-accent-600 input::placeholder,
+[style*="#16a34a"] input::placeholder,
+[style*="#22c55e"] input::placeholder {
+    color: rgba(255, 255, 255, 0.85) !important;
+    font-weight: 500;
+}
+
+/* Liens footer dans la zone navy — plus clairs */
+footer a, footer .footer-link {
+    color: rgba(255, 255, 255, 0.75);
+    transition: color 0.2s ease;
+}
+footer a:hover {
+    color: #86efac; /* teal-300 hover */
+}
+
+/* Texte sur accent (boutons, badges) — assurer white pur */
+.btn-accent, .bg-accent-500, .bg-accent-600 {
+    color: #ffffff;
+}
+
+/* ======================= LOGO NAVBAR — couleurs d'origine (navbar blanche) ======================= */
+.logo-navbar {
+    transition: filter 0.3s ease;
+    filter: none;
+}
+
+/* ═══ Premium Icon Badges — gradient brand→accent (logo colors) ═══ */
+.icon-badge-premium {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 60%, #1a6cc2 100%);
+  box-shadow: 0 10px 24px -8px rgba(22,163,74,0.5), inset 0 1px 0 rgba(255,255,255,0.25);
+  color: white;
+  transition: transform 0.35s cubic-bezier(0.4,0,0.2,1), box-shadow 0.35s ease;
+}
+.icon-badge-premium::after {
+  content:'';
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.35), transparent 50%);
+  pointer-events: none;
+}
+.icon-badge-premium i { position: relative; z-index: 1; }
+.icon-badge-premium:hover,
+.group:hover .icon-badge-premium {
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 18px 36px -10px rgba(22,163,74,0.6), inset 0 1px 0 rgba(255,255,255,0.3);
+}
+.icon-badge-premium.sm { width: 44px; height: 44px; border-radius: 12px; }
+.icon-badge-premium.lg { width: 72px; height: 72px; border-radius: 20px; }
